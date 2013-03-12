@@ -107,7 +107,7 @@ At the time when the rifle fires:
 		if the gunpowder is in the gun barrel:
 			follow the rifle firing rule;
 		otherwise:
-			say "However, the spark fails to light anything.";
+			say "However, there is nothing for the spark to ignite.";
 			decrease Military Affinity by one.
 
 [TODO: Text here]
@@ -186,6 +186,8 @@ Chapter 3 - Medal
 
 Part 3 - College
 
+College Affinity is a number that varies.  College Affinity is 0.
+
 [TODO: most of this part]
 
 Chapter 1 - Textbook
@@ -199,9 +201,30 @@ Instead of examining the textbook when The More You Know has not happened:
 	move the player to the library.
 
 The More You Know is a scene.
+The More You Know begins when the player is in the library.
+When The More You Know begins:
+	move the textbook to the library.
+The More You Know ends when Table 3.1.1 is empty.
+
+Test Score is a number that varies.  Test Score is 0.
 
 The library is a room.
+The testing computer is a thing in the library.
 
+Every turn when The More You Know is happening:
+	repeat through Table 3.1.1:
+		say "The testing computer prints: [bold type][Quiz Question entry][roman type]";
+		make no decision.
+[this is a little unintuitive; "make no decision" acts as a return statement, so what this does is just prints the first non-blank line.]
+
+Table 3.1.1 - Quiz
+Quiz Question	Topic	Chapter
+"What do you get when you multiply 6 by 9?"	"42"	1
+"How do you feel?"	--	--
+
+Table 3.1.2 - Book entry
+Text	Chapter
+"As everyone knows, the universe runs in base 13."	1
 [TODO: a lot of stuff still]
 
 Chapter 2 - Bottle
