@@ -28,19 +28,6 @@ Instead of shooting when the player holds a gun:
 Instead of shooting when the player does not hold a gun:
 	say "Shoot [the noun] with what?"
 
-[Was doing all this nonsense, then I realized that there was an easier way.]
-[The block attacking rule is not listed in any rulebook.
-
-Check attacking when the noun is not a person (this is the can't fight objects rule):
-	say "There's not much point in attacking [the noun].";
-	stop the action.
-
-Check attacking when the player does not hold a gun (this is the can't fight unarmed rule):
-	say "You might find it a bit hard to attack [the noun] without a weapon.";
-	stop the action.
-
-The can't fight objects rule is listed before the can't fight unarmed rule in the check attacking rulebook.]
-
 Section 1 - Falling in
 
 The rifle is in the bedroom.
@@ -54,7 +41,7 @@ Both Sides of the Gun is a scene.  "[bold type]Darkness.[line break][roman type]
 
 Suddenly you hear a deafening bang.
 
-As your ears begin to clear up you hear a cacophany of other noises: sounds of thunder, sounds of yelling and stamping feet.  You hear the sounds of a battlefield.
+As your ears clear up you hear a cacophany of other noises: thunderous rat-a-tat-a-tats, stamping feet, the occasional yell.  The sounds of a battlefield.
 
 Another gunshot sounds from incredibly nearby.  Moments later, you finally see light."
 
@@ -113,7 +100,6 @@ At the time when the rifle fires:
 			say "However, there is nothing for the spark to ignite.";
 			decrease Military Affinity by one.
 
-[TODO: Text here]
 At the time when the girl shoots:
 	if the player is in the gun barrel:
 		say "The girl begins firing, and you feel a sense of vertigo as the rifle tilts upwards...[line break]";
@@ -132,7 +118,8 @@ This is the rifle firing rule:
 This is the enter the battlefield rule:
 	now the player carries the rifle;
 	now the gunpowder is off-stage;
-	move the player to the battlefield.
+	move the player to the battlefield;
+	the enemy shoots in two turns from now.
 
 Section 3 - Battle
 
@@ -150,7 +137,7 @@ Understand "corpse" as a body when the item described is part of a dead person.
 
 Jenkins is a person.  Jenkins is dead.  The initial appearance is "Your comrade Jenkins lies fallen here, riddled with bullets."
 
-Before printing the name of an improper-named dead person, say "corpse of the ".
+Before printing the name of an improper-named dead person, say "corpse of a ".
 Before printing the name of a proper-named dead person, say "the corpse of ".
 
 [Apparently if you define something as a kind you can make multiple things named the same as the kind.  Good to know.]
@@ -177,14 +164,35 @@ Instead of attacking the enemy when the player holds a gun:
 Instead of attacking the enemy when the player does not hold a gun:
 	say "You'll have to pick up your weapon first."
 
+At the time when the enemy shoots:
+	do nothing.
+
 Chapter 2 - Uniform
 
 [TODO: this chapter]
 
 Chapter 3 - Medal
 
-[I'm considering a part where you throw the lighter onto Jenkins' grave.  'Course, that doesn't really work interactively...]
 [TODO: this chapter]
+The medal is a thing.  It is wearable.  It is in the bedroom.
+
+There is a scene called So Long and Thanks.
+So Long and Thanks begins when the player carries the medal.
+When So Long and Thanks begins:
+	move the player to the awards ceremony.
+
+The awards ceremony is a room.
+The funeral is a room.  It is west of the awards ceremony.
+
+Jenkins' grave is a supporter in the funeral.
+
+After putting something on the grave for the first time (this is the paying respect rule):
+	if the noun is the medal:
+		say "He deserves it more than you.  Good man, Jenkins.";
+	if the noun is the lighter:
+		say "You always felt you should return it.  He'd never let you, though.";
+	if the noun is the rifle:
+		say "You won't be needing it anymore.  You're done for good."
 
 Part 3 - College
 
@@ -197,6 +205,7 @@ Chapter 1 - Textbook
 The textbook is a thing in the bedroom.  Understand "book" as the textbook.
 
 Understand "read [textbook]" as examining.
+Understand "consult [textbook]" as examining.
 
 Instead of examining the textbook when The More You Know has not happened:
 	say "You start reading the textbook, but it makes no sense and is.. just..... so.......... bo........ring...........................................";
@@ -209,12 +218,14 @@ When The More You Know begins:
 The More You Know ends when Table 3.1.1 is empty.
 When The More You Know ends:
 	move the player to the bedroom;
-	let Modified Score be (Test Score - 1) * 3;
+	let Modified Score be (Test Score  * 3) - 4;
 	now College Affinity is (College Affinity + Modified Score).
 Test Score is a number that varies.  Test Score is 0.
 
+[TODO: describe library, and computer]
 The library is a room.
 The testing computer is a person in the library.
+[it's a person so Inform directs answers to it.]
 
 Every turn when The More You Know is happening:
 	repeat through Table 3.1.1:
@@ -224,30 +235,47 @@ Every turn when The More You Know is happening:
 
 Instead of examining the textbook while The More You Know is happening:
 	repeat through Table 3.1.1:
-		choose the row with Chapter of Chapter entry from Table 3.1.2;
-		say "You find something that looks relevant in Chapter [Chapter entry]: [bold type][Text entry][roman type]";
+		if there is a Chapter entry:
+			choose the row with Chapter of Chapter entry from Table 3.1.2;
+			say "You find something that looks relevant:[line break][line break][bold type]Chapter [Chapter entry][line break][roman type][Text entry][line break]";
+		otherwise:
+			say "You cannot find anything relevant in the textbook.";
 		stop the action.
 [Similarly, this prints the entry in Table 3.1.2 that corresponds to the current row in Table 3.1.1]
 
-Instead of answering when The More You Know is happening:
+Instead of answering the computer that a topic listed in the Table of Quiz Questions when The More You Know is happening:
+	let Temp be the Quiz Question entry;
 	repeat through Table 3.1.1:
-		if the topic is the Topic entry:
+		if Temp is the Quiz Question entry:
 			increase Test Score by 1;
 			say "The computer responds: [bold type]Correct.[roman type]";
 		otherwise:
 			say "The computer responds: [bold type]Incorrect.[roman type]";
 		blank out the whole row;
 		stop the action.
+[and this checks if the answer matches the "correct" answer for the current row.]
 
-Table 3.1.1 - Quiz
-Quiz Question	Topic	Chapter
-"What do you get when you multiply 6 by 9?"	"42"	1
-"How do you feel?"	--	--
+Instead of answering the computer that when The More You Know is happening:
+	say "The computer responds: [bold type]Incorrect.[roman type]";
+	repeat through Table 3.1.1:
+		blank out the whole row;
+		stop the action.
+[meanwhile, this block moves to the next row if (as is likely) the player answers with a phrase that is not the answer to any question.]
+
+
+[would love to allow "Hell, Michigan" but Inform's understand stuff doesn't like commas.  Probably should make a different question then.]
+Table 3.1.1 - Quiz Questions
+Topic	Quiz Question	Chapter
+"Hell/Michigan"	"Where is the center of the universe?"	1
+"Forty-two" or "42"	"What do you get when you multiply 6 by 9?"	1
+"I feel fine"	"How do you feel?"	--
+
+Understand "Forty-two" or "42" as 42.
 
 Table 3.1.2 - Book entry
-Text	Chapter
-"As everyone knows, the universe runs in base 13."	1
-[TODO: a lot of stuff still]
+Chapter	Text
+1	"As everyone knows, the universe runs in base 13.  Using this knowledge, and the recently-discovered edge of the universe behind Gallifrey 412, scientists have calculated the location of the center of the universe.  They were quite surprised to find it to in Hell, Michigan."
+[TODO: add more Q/As]
 
 Chapter 2 - Bottle
 
