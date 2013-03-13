@@ -10,6 +10,9 @@ The lighter is a thing.  The player carries the lighter.
 Not sure how to explain its presence.  We need to make the player aware of it.
 Maybe it could be in another military section that's a prerequisite for gun?]
 
+Report requesting the score:
+	say "Military: [Military Affinity][line break]College: [College Affinity][line break]Moving: [Moving Affinity]".
+
 Part 2 - The Military
 
 Military Affinity is a number that varies.  Military Affinity is 0.
@@ -118,7 +121,6 @@ At the time when the girl shoots:
 		now the enemy is the Japanese girl;
 		follow the enter the battlefield rule.
 
-
 This is the rifle firing rule:
 	say "The mass of gunpowder explodes, and you are sent flying out of the rifle.";
 	now the Japanese girl is dead;
@@ -205,17 +207,37 @@ The More You Know begins when the player is in the library.
 When The More You Know begins:
 	move the textbook to the library.
 The More You Know ends when Table 3.1.1 is empty.
-
+When The More You Know ends:
+	move the player to the bedroom;
+	let Modified Score be (Test Score - 1) * 3;
+	now College Affinity is (College Affinity + Modified Score).
 Test Score is a number that varies.  Test Score is 0.
 
 The library is a room.
-The testing computer is a thing in the library.
+The testing computer is a person in the library.
 
 Every turn when The More You Know is happening:
 	repeat through Table 3.1.1:
 		say "The testing computer prints: [bold type][Quiz Question entry][roman type]";
 		make no decision.
 [this is a little unintuitive; "make no decision" acts as a return statement, so what this does is just prints the first non-blank line.]
+
+Instead of examining the textbook while The More You Know is happening:
+	repeat through Table 3.1.1:
+		choose the row with Chapter of Chapter entry from Table 3.1.2;
+		say "You find something that looks relevant in Chapter [Chapter entry]: [bold type][Text entry][roman type]";
+		stop the action.
+[Similarly, this prints the entry in Table 3.1.2 that corresponds to the current row in Table 3.1.1]
+
+Instead of answering when The More You Know is happening:
+	repeat through Table 3.1.1:
+		if the topic is the Topic entry:
+			increase Test Score by 1;
+			say "The computer responds: [bold type]Correct.[roman type]";
+		otherwise:
+			say "The computer responds: [bold type]Incorrect.[roman type]";
+		blank out the whole row;
+		stop the action.
 
 Table 3.1.1 - Quiz
 Quiz Question	Topic	Chapter
@@ -237,6 +259,8 @@ Chapter 3 - Application (or whatever)
 [also if there was any option that actually has both sides, yanno]
 
 Part 4 - Moving in
+
+Moving Affinity is a number that varies.  Moving Affinity is 0.
 
 [TODO: this entire part]
 
