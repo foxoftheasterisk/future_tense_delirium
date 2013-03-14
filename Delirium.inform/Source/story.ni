@@ -288,6 +288,8 @@ Chapter 3 - Application (or whatever)
 
 Part 4 - Living on Your Own
 
+Moving Affinity is a number that varies.  Moving Affinity is 0.
+
 Chapter 1 - Rent Contract
 
 Section 1 - Going to the Office
@@ -310,11 +312,21 @@ The real estate office is a room."You find yourself in an office of a real estat
 
 After having spent considerable time looking through properties, you think you've found the right one. Comfortably near all the major businesses; Decently priced; Has all the amenities you'll need. It almost feels too good to be true."
 
-The pen is an undescribed thing in the real estate office."A normal ink pen. One of the ones you get in a huge package of, like, fifty of them..."
+The desk is scenery in the real estate office.  The pen is on the desk.  The unsigned contract is on the desk.
 
-The unsigned contract is an undescribed thing in the real estate office. "The contract for the property you're looking to rent."
+The pen is an undescribed thing."A normal ink pen. One of the ones you get in a huge package of, like, fifty of them..."
+
+The unsigned contract is an undescribed thing. "The contract for the property you're looking to rent."
 
 Instead of taking the unsigned contract:
 	say "There's no reason to take the contract now. You haven't even signed it yet."
 
-The real estate agent is a person in the real estate office. "An old man, who has probably had years of experience selling homes and renting properties behind him. He's staring at you intently, seemingly analyzing your every action."
+The real estate agent is a person in the real estate office. The description is "An old man, who has probably had years of experience selling homes and renting properties behind him. He's staring at you intently, seemingly analyzing your every action."
+
+Signing is an action applying to two things.
+Understand "Sign [something] with [something]" as signing.
+Check signing when the second noun is not the pen:
+	say "You can't write with [the second noun]!";
+	stop the action.
+Report signing: 
+	say "You vandalize [the noun].".
