@@ -286,16 +286,35 @@ Chapter 3 - Application (or whatever)
 [TODO: this]
 [also if there was any option that actually has both sides, yanno]
 
-Part 4 - Moving in
+Part 4 - Living on Your Own
 
-Moving Affinity is a number that varies.  Moving Affinity is 0.
+Chapter 1 - Rent Contract
 
-[TODO: this entire part]
+Section 1 - Going to the Office
 
-Chapter 1 - Lingerie
+The rent contract is a thing in the bedroom. Understand "contract" as the rent contract.
 
-Chapter 2 - Dishware/House Contract/Whatever
+Understand "read [contract]" as examining.
 
-[i feel dishware signifies the house better, as the contract involves money more - but either works]
+Instead of examining the rent contract when Making a Commitment has not happened:
+	say "You try to understand the legal-ese that the contract was written in, becoming absorbed in trying to understand it all. Soon, you feel as if you've lost track of time and place in trying to understand this ridiculous wording...";
+	move the player to the real estate office.
 
-Chapter 3 - Paycheck
+Making a Commitment is a scene.
+
+Making a Commitment begins when the player is in the real estate office.
+
+Section 2 - The Real Estate Office
+
+The real estate office is a room."You find yourself in an office of a real estate agent. In front of you, on a desk, is a pen, and that rent contract.
+
+After having spent considerable time looking through properties, you think you've found the right one. Comfortably near all the major businesses; Decently priced; Has all the amenities you'll need. It almost feels too good to be true."
+
+The pen is an undescribed thing in the real estate office."A normal ink pen. One of the ones you get in a huge package of, like, fifty of them..."
+
+The unsigned contract is an undescribed thing in the real estate office. "The contract for the property you're looking to rent."
+
+Instead of taking the unsigned contract:
+	say "There's no reason to take the contract now. You haven't even signed it yet."
+
+The real estate agent is a person in the real estate office. "An old man, who has probably had years of experience selling homes and renting properties behind him. He's staring at you intently, seemingly analyzing your every action."
