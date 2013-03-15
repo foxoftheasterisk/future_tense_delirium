@@ -23,6 +23,38 @@ Report requesting the score:
 
 Instead of doing something other than examining, looking, or taking inventory in your bedroom, say "You try [the current action], but as you move to do so, you are overcome by that horrible headache."
 
+A Decision is a scene.  A Decision begins when the player is in the bedroom for the fourth time.
+
+When A Decision begins:
+	if Military Affinity > College Affinity and Military Affinity > Moving Affinity and Military Affinity > 0:
+		follow the military ending rule;
+		rule succeeds;
+	if College Affinity > Military Affinity and College Affinity > Moving Affinity and College Affinity > 0:
+		follow the college ending rule;
+		rule succeeds;
+	if Moving Affinity > Military Affinity and Moving Affinity > College Affinity and Moving Affinity > 0:
+		follow the moving ending rule;
+		rule succeeds;
+	if Moving Affinity < 0 and College Affinity < 0 and Military Affinity < 0:
+		follow the hobo ending rule;
+		rule succeeds;
+	otherwise:
+		follow the indecision ending rule;
+		rule succeeds.
+
+This is the military ending rule:
+	say "Raw raw militarism!";
+	do nothing.
+This is the college ending rule:
+	do nothing.
+This is the moving ending rule:
+	do nothing.
+This is the hobo ending rule:
+	say "You are hobo.  Hear you roar.";
+	do nothing.
+This is the indecision ending rule:
+	do nothing.
+
 Part 2 - The Military
 
 Military Affinity is a number that varies.  Military Affinity is 0.
@@ -129,7 +161,7 @@ This is the rifle firing rule:
 	move the Japanese man to the battlefield;
 	now the enemy is the Japanese man;
 	follow the enter the battlefield rule.
-	
+
 This is the enter the battlefield rule:
 	now the player carries the rifle;
 	now the gunpowder is off-stage;
@@ -214,7 +246,7 @@ Chapter 2 - Uniform
 Chapter 3 - Medal
 
 [TODO: this chapter]
-The medal is a thing.  It is wearable.  It is in the bedroom.
+[The medal is a thing.  It is wearable.  It is in the bedroom.
 
 There is a scene called So Long and Thanks.
 So Long and Thanks begins when the player carries the medal.
@@ -234,7 +266,7 @@ After putting something on the grave for the first time (this is the paying resp
 		say "You always felt you should return it.  He'd never let you, though.";
 	if the noun is the rifle:
 		say "You won't be needing it anymore.  You're done for good.";
-		decrease Military Affinity by 3.
+		decrease Military Affinity by 3.]
 
 Part 3 - College
 
@@ -331,9 +363,7 @@ Topic	Quiz Question	Chapter
 "Hermann Rorschach" or "Rorschach"	"Who was M.C.Escher's greatest enemy?"	4
 "Forty-two" or "42"	"What do you get when you multiply 6 by 9?"	1
 "Dir Civil War" or "Civil War"	"Äst primer en zir globinsphere dir Martians sne ilgenmast?"	7
-"I feel fine"	"How do you feel?"	--
-
-Understand "Forty-two" or "42" as 42.
+"I feel fine" or "Fine"	"How do you feel?"	--
 
 Table 3.1.2 - Book entry
 Chapter	Text
@@ -390,7 +420,7 @@ Instead of taking the rent contract in the real estate office:
 
 The real estate agent is a person in the real estate office.  "The real estate agent scrutinizes you from across the desk." The description is "An old man, who has probably had years of experience selling homes and renting properties behind him. He's staring at you intently, seemingly analyzing your every action."
 
-The Office Door is a door. It is north of the real estate office. Through it is your bedroom.
+The Office Door is a door. It is outside of the real estate office. Through it is your bedroom.
 
 Signing is an action applying to two things.
 Understand "Sign [something] with [something]" as signing.
