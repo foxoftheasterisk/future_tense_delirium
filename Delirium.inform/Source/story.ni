@@ -10,6 +10,8 @@ You wake up in a jolt! It's morning, you think... As you think this, your head i
 
 You've been given so much time to prepare to leave home, but you put it off. You procrastinated and wasted time. Then, when you knew it could wait no longer, THEN you decided to start researching, and look where it's left you? You've been trudging through all this research for so long, that you've gone and overworked yourself, and earned a fever for it.
 
+You try to light a cigarette, but a wave of nausea overcomes you, and you think better of it.
+
 ...Anyways, you have to make a decision soon. There are many paths ahead of you, and only one of them is going to be the one that makes you truly happy. You only have so long til your parents just up and kick you out, so it'd be best to make your decision soon.".
 
 Your bedroom is a room. The description of your bedroom is "The same old room you've always been in since who knows when. Sigh... you're gonna miss this old place..."
@@ -383,6 +385,14 @@ Instead of taking the rent contract in the real estate office:
 	say "There's no reason to take the contract now. You haven't even signed it yet."
 
 The real estate agent is a person in the real estate office.  "The real estate agent scrutinizes you from across the desk." The description is "An old man, who has probably had years of experience selling homes and renting properties behind him. He's staring at you intently, seemingly analyzing your every action."
+
+Instead of asking the real estate agent about "a pen", say "The real estate agent's expression becomes slightly annoyed. [quotation mark]There is a pen right here on the desk. Please use it to sign this contract, if you please.[quotation mark]".
+
+Instead of asking the real estate agent about "the rent contract", say "The agent leans in closer. [quotation mark]Yes, the contract. Please sign it, and then the place will be yours... Well, you'll be renting it, but still...[quotation mark]".
+
+Instead of telling the real estate agent about something, try asking the real estate agent about it.
+
+Instead of asking the real estate agent about something, say "The real estate agent dismisses your query. [quotation mark]Yes, yes, we can discuss other things later, but now, I just need you to sign this contract.[quotation mark]".
 
 The Office Door is a door. It is outside of the real estate office. Through it is your bedroom.
 
