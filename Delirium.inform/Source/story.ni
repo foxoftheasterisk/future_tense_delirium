@@ -26,13 +26,14 @@ Instead of doing something other than examining, looking, or taking inventory in
 A Decision is a scene.  A Decision begins when the player is in the bedroom for the fourth time.
 
 When A Decision begins:
-	if Military Affinity > College Affinity and Military Affinity > Moving Affinity and Military Affinity > 0:
+	say "Suddenly, your fever goes away. You feel very lucid now. You've seen a lot of things over this short amount of time. Had many thoughts about the future.";
+	if Military Affinity > College Affinity and Military Affinity > Moving Affinity and Military Affinity >= 0:
 		follow the military ending rule;
 		rule succeeds;
-	if College Affinity > Military Affinity and College Affinity > Moving Affinity and College Affinity > 0:
+	if College Affinity > Military Affinity and College Affinity > Moving Affinity and College Affinity >= 0:
 		follow the college ending rule;
 		rule succeeds;
-	if Moving Affinity > Military Affinity and Moving Affinity > College Affinity and Moving Affinity > 0:
+	if Moving Affinity > Military Affinity and Moving Affinity > College Affinity and Moving Affinity >= 0:
 		follow the moving ending rule;
 		rule succeeds;
 	if Moving Affinity < 0 and College Affinity < 0 and Military Affinity < 0:
@@ -43,17 +44,20 @@ When A Decision begins:
 		rule succeeds.
 
 This is the military ending rule:
-	say "Raw raw militarism!";
-	do nothing.
+	say "You take a good look at the rifle...[line break][line break]The military can be a very unfair place. You will have no place to truly call your own, and you will sometimes even have to go so far as to take the lives of people that you have no reason to want to. However, at the same time, you will be giving your all to protect the land and people you care for. You will be risking it all to make sure that those who you love won't have to later.[line break][line break]With a sigh, you head out for the recruiting station. Soon, you will start your new life in service of your country.";
+	end the story finally.
 This is the college ending rule:
-	do nothing.
+	say "You look at the textbook again...[line break][line break]Yeah, college can be rough, and sometimes you don't have the time to do whatever you want, but it's not like you're giving everything away for nothing. You're investing in something more: the ability to do what you want to later, to be able to do it well, and hey, you might even be able to make a good career out of it. And just because you can't ALWAYS relax and do fun things, doesn't mean you NEVER can. [line break][line break]I mean, you're gonna be surrounded by others who are in the exact same situation as you. You'll get to know more people who understand the junk you sometimes have to go through to get ahead. For all the time you lose, you also gain knowledge, and friends.[line break][line break]Wellp, might as well get a start on all the paperwork; Getting into college can be just as hectic as staying in college.";
+	end the story finally.
 This is the moving ending rule:
-	do nothing.
+	say "You take one more look at the rent contract.[line break][line break]Even if it's gonna be rough, and there's no guarantee that things will always be good, if you are on your own, at least wherever you live is yours. You won't be tied down forever by somebody just for trying to better yourself. If you want to learn and do things for your loved ones, you can do it yourself. On your own, you're free to do whatever you think is best.[line break][line break]You start to pack all the things you have; You don't have too long to move out and get settled in.";
+	end the story finally.
 This is the hobo ending rule:
-	say "You are hobo.  Hear you roar.";
-	do nothing.
+	say "College? The Military? Some dead-end job? None of this looks good at all![line break][line break]You've been wasting all this time researching and wracking your brain, and it all came to nothing! Suddenly, it feels as if the room is closing in around you. You close your eyes, bracing for the worst...[line break][line break]You open your eyes. You realize that that whole ordeal was a dream, a sad revisiting of the life you once had. Now, you're nothing more than a homeless man, a beggar on the streets, wearing tattered clothes and living in a box.[line break][line break]Stupid friggin' horrible blinding motherflubbing skull-smashing fever!!!";
+	end the story finally.
 This is the indecision ending rule:
-	do nothing.
+	say "You look at the rent contract... then the rifle... then the textbook...[line break][line break]Even though you have to make a decision at some point, none of these seem too much better than the others.[line break][line break]Whatever. You'll just let things happen as they come. You've got plenty of places to go, and it's not like you HAVE to stay with any of these forever. It's your life, and the future is only going to get better.";
+	end the story finally.
 
 Part 2 - The Military
 
@@ -239,35 +243,6 @@ At the time when the enemy shoots:
 		now the player is dead.
 [TODO: better prose would be good here.]
 
-Chapter 2 - Uniform
-
-[TODO: this chapter]
-
-Chapter 3 - Medal
-
-[TODO: this chapter]
-[The medal is a thing.  It is wearable.  It is in the bedroom.
-
-There is a scene called So Long and Thanks.
-So Long and Thanks begins when the player carries the medal.
-When So Long and Thanks begins:
-	move the player to the awards ceremony.
-
-The awards ceremony is a room.
-The funeral is a room.  It is west of the awards ceremony.
-
-Jenkins' grave is a supporter in the funeral.
-
-After putting something on the grave for the first time (this is the paying respect rule):
-	if the noun is the medal:
-		say "He deserves it more than you.  Good man, Jenkins.";
-		increase Military Affinity by 1;
-	if the noun is the lighter:
-		say "You always felt you should return it.  He'd never let you, though.";
-	if the noun is the rifle:
-		say "You won't be needing it anymore.  You're done for good.";
-		decrease Military Affinity by 3.]
-
 Part 3 - College
 
 College Affinity is a number that varies.  College Affinity is 0.
@@ -299,10 +274,9 @@ When The More You Know ends:
 	say "[bold type]Quiz over.  Your score: [Test Score]/[the number of rows in Table 3.1.1].";
 	let Modified Score be (Test Score  * 2) - 5;
 	if Modified Score > 0:
-		say "You pass.";
+		say "You pass.[roman type][line break][line break]You feel a great satisfaction in all of this. Even though the questions made less and less sense, you were still able to figure them out on your own. If you can do this, is there any difficulty you can't overcome with thought and a little elbow grease?[line break][line break]Suddenly, the monitors turned white, getting brighter with each moment. Soon, you are consumed in a bright light![line break][line break]You open your eyes, finding yourself back in your room. That whole ordeal was only a dream? This fever must be bad if it's doing this to you...";
 	otherwise:
-		say "You fail.";
-	say "[roman type]";
+		say "You fail.[roman type][line break][line break]A great sense of disappointment falls upon you. You thought you had what it took to do this. If something like this is going to hold you back, who knows what other, more esoteric topics might appear and stop you in your future?[line break][line break]In utter disappointment and frustration, you fall onto your knees and let out a loud yell. As you open your eyes again, you realize that you are now in your room. That whole crucible was only a dream. Blasted fever!";
 	move the player to the bedroom;
 	now the player carries the textbook;
 	now College Affinity is (College Affinity + Modified Score).
@@ -355,7 +329,6 @@ Instead of answering the computer that when The More You Know is happening:
 		stop the action.
 [meanwhile, this block moves to the next row if (as is likely) the player answers with a phrase that is not the answer to any question.]
 
-
 [would love to allow "Hell, Michigan" but Inform's understand stuff doesn't like commas.  Probably should make a different question then.]
 Table 3.1.1 - Quiz Questions
 Topic	Quiz Question	Chapter
@@ -371,15 +344,6 @@ Chapter	Text
 4	"Under the guise of making amends, Rorschach made his way into the center of the complex.  At the point where all stairs meet, he made his move, using a ink-stained kerchief to plunge the area into darkness.  From there, he stole away into the bottom-most depths of the dungeon, where he found his prize: the fabled Bending Triangle of Escher."
 7	"De flergunsterg sne horgenmätz dir heggenütz.  Smebog sne jebudé åst morgen.  Ay mongentenks ïr walgenmatzit.  Ze Floggenue an gerené börk börk börk.  En dir Civil War ur mastingetsit fûr orgentansin.  Mer forgentats in dêr eigenwhatsits.  Orp Martians le gorchen en marewîl lopsis.  Mure cidowas en florgenshäks efermos."
 [TODO: add more Q/As]
-
-Chapter 2 - Bottle
-
-[TODO: this]
-
-Chapter 3 - Application (or whatever)
-
-[TODO: this]
-[also if there was any option that actually has both sides, yanno]
 
 Part 4 - Living on Your Own
 
@@ -475,7 +439,3 @@ now the player carries the rent contract;
 Move the player to your bedroom, without printing a room description;
 say "Suddenly, you wake up in your bedroom. It was only a dream. It must have been the fever's doing...";
 Stop the action.
-
-Chapter 2 - Paycheck
-
-Chapter 3 - Lingerie
