@@ -10,7 +10,7 @@ release to "C:\Users\Rhys Larkins\Documents\Cmps148 Readings\IF Project\future_t
 
 ! Blorb instructions
 
-storyfile leafname "Delirium.zblorb"
+storyfile leafname "Future-Tense Delirium.zblorb"
 storyfile "C:\Users\Rhys Larkins\Documents\Cmps148 Readings\IF Project\future_tense_delirium\Delirium.inform\Build\output.z8" include
 ifiction "C:\Users\Rhys Larkins\Documents\Cmps148 Readings\IF Project\future_tense_delirium\Delirium.inform\Metadata.iFiction" include
 cover "C:\Program Files\Inform 7\Inform7\Extensions\Reserved\DefaultCover.jpg"
@@ -21,7 +21,7 @@ picture 1 "C:\Program Files\Inform 7\Inform7\Extensions\Reserved\DefaultCover.jp
 placeholder [IFID] = "377E62F9-83E5-4980-860D-7BE75F58C918"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2013"
-placeholder [TITLE] = "Delirium"
+placeholder [TITLE] = "Future-Tense Delirium"
 placeholder [AUTHOR] = "Steven Hack and Rhys Larkins"
 placeholder [BLURB] = "A work of interactive fiction."
 

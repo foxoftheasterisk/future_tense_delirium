@@ -1,4 +1,4 @@
-"Delirium" by Steven Hack and Rhys Larkins
+"Future-Tense Delirium" by Steven Hack and Rhys Larkins
 
 Use no scoring.
 
@@ -82,7 +82,7 @@ After deciding the scope of the player:
 	if the location is the gun barrel, place the Japanese girl in scope.
 
 Instead of examining outside in the gun barrel:
-	say "Outside the barrel, you can see only a Japanese girl.".
+	say "Outside the barrel, you can see only the Japanese girl.".
 
 Instead of going when the room gone from is the gun barrel:
 	say "You can't seem to move very far.  Almost like you don't have legs."
@@ -125,7 +125,7 @@ At the time when the girl shoots:
 This is the rifle firing rule:
 	say "The mass of gunpowder explodes, and you are sent flying out of the rifle.";
 	now the Japanese girl is dead;
-	now the initial appearance of the Japanese girl is "A Japanese girl lies here, a bullet through her heart.";
+	now the initial appearance of the Japanese girl is "The Japanese girl lies here, a bullet through her heart.";
 	move the Japanese man to the battlefield;
 	now the enemy is the Japanese man;
 	follow the enter the battlefield rule.
@@ -139,7 +139,7 @@ This is the enter the battlefield rule:
 Section 3 - Battle
 
 [TODO: describe battlefield]
-The battlefield is a room.
+The battlefield is a room. The description is "For what little time you have to look around, all you see is a large, treeless wasteland. You can hear gunshots coming from seemingly every direction.".
 
 [using an adaptation of part of the code from the example "puff of orange smoke"]
 A person can be alive or dead.  A person is usually alive.
@@ -171,9 +171,23 @@ The Japanese man is a person.  He is wearing camoflauge.  He is holding a submac
 [TODO: add an alternate ending.]
 Both Sides of the Gun ends in victory when the enemy is dead.
 Both Sides of the Gun ends in defeat when the player is dead.
-When Both Sides of the Gun ends:
-	say "Suddenly, you are back in";
-	move the player to the bedroom.
+
+When Both Sides of the Gun ends in victory: say "The moment the Japanese man falls to the ground, you suddenly start to feel faint, and fall to the ground. 
+
+As your consciousness fades, you only feel relief that you've brought this whole conflict one step closer to victory, that you've done one more thing to keep your friends and family safe, and one more thing in service to your country. 
+
+Suddenly, you open your eyes again. It was all just a dream; A product of your high fever. You are back in";
+move the player to your bedroom.
+
+When Both Sides of the Gun ends in defeat: say "You stumble forward, the feeling of the bullet wounds rushing at you suddenly. You lose all strength in your arms and legs, and fall to the ground.
+
+In your last moments of consciousness, you can only feel regret. Why did you do this? Why did you come here? You never wanted to fight, to kill others who you don't even know, for reasons you barely even understand. For all you know, these people might not have even wanted to fight, only doing so to protect themselves and their loved ones.
+
+Everything fades to black. You then open your eyes, only to realize that this was all a dream. Cursed fever! 
+
+Anyways, you are still in";
+now the player is alive;
+move the player to your bedroom.
 
 Instead of attacking the enemy when the player holds a gun:
 	say "Like a good soldier, you shoot [the enemy].";
@@ -282,7 +296,8 @@ Every turn when The More You Know is happening:
 Instead of examining the textbook while The More You Know is happening:
 	repeat through Table 3.1.1:
 		if there is a Chapter entry:
-			choose the row with Chapter of Chapter entry from Table 3.1.2;
+			let Chapter Number be the Chapter entry;
+			choose the row with Chapter of Chapter Number from Table 3.1.2;
 			say "You find something that looks relevant:[line break][line break][bold type]Chapter [Chapter entry][line break][roman type][Text entry][line break]";
 		otherwise:
 			say "You cannot find anything relevant in the textbook.";
@@ -350,6 +365,9 @@ Understand "read [contract]" as examining.
 
 Instead of examining the rent contract in the bedroom when Making a Commitment has not happened:
 	say "You try to understand the legal-ese that the contract was written in, becoming absorbed in trying to understand it all. Soon, you lose all track of time and place trying to understand the ridiculous wording...";
+	now the rent contract is on the desk;
+	now the rent contract is undescribed;
+	change the description of the rent contract to "The contract for the property you're looking to rent.";
 	move the player to the real estate office.
 
 Making a Commitment is a scene.
@@ -363,13 +381,11 @@ The real estate office is a room."You find yourself in an office of a real estat
 
 After having spent considerable time looking through properties, you think you've found the right one. Comfortably near all the major businesses; decently priced; has all the amenities you'll need...  It almost feels too good to be true."
 
-The desk is a thing in the real estate office.  "On the desk in front of you lies the rent contract and a pen with which to sign it."  The pen is on the desk.  The unsigned contract is on the desk.
+The desk is a thing in the real estate office.  "On the desk in front of you lies the rent contract and a pen with which to sign it."  The pen is on the desk. 
 
 The pen is an undescribed thing. The description of the pen is "A normal ink pen. One of the ones you get in a huge package of, like, fifty of them..."
 
-The unsigned contract is an undescribed thing. The description is "The contract for the property you're looking to rent."
-
-Instead of taking the unsigned contract:
+Instead of taking the rent contract in the real estate office:
 	say "There's no reason to take the contract now. You haven't even signed it yet."
 
 The real estate agent is a person in the real estate office.  "The real estate agent scrutinizes you from across the desk." The description is "An old man, who has probably had years of experience selling homes and renting properties behind him. He's staring at you intently, seemingly analyzing your every action."
@@ -399,15 +415,16 @@ As you open the door, a bright light washes over you, and you feel as if you're 
 Decrease Moving Affinity by 3;
 Move the player to your bedroom, without printing a room description;
 say "Suddenly, you shake yourself awake! You're still in your room. It was all just a dream. Stupid fever...";
+now the player carries the rent contract;
 Change the description of the rent contract to "A contract to rent a home. Left unsigned".
 
-After signing the unsigned contract when the second noun is the pen for the first time: say "As you go to sign the contract, you decide to look at some of the fine print that you mostly skimmed over previously.
+After signing the rent contract in the real estate office when the second noun is the pen for the first time: say "As you go to sign the contract, you decide to look at some of the fine print that you mostly skimmed over previously.
 
 As you read, you find yourself quite concerned. So many potential fees and charges, not even considering deposits and the such...";
 Increase Moving Affinity by 1;
 Stop the action.
 
-After signing the unsigned contract when the second noun is the pen for the second time: say "You valiantly continue to try to sign the document.
+After signing the rent contract in the real estate office when the second noun is the pen for the second time: say "You valiantly continue to try to sign the document.
 
 So what if there are fees and charges? That's a part of being an adult! You get a job, you pay the bills, and you live happily, free from the arbitrary constraints placed on you by so many!
 
@@ -417,12 +434,14 @@ You feel even more concern over this whole deal. Seriously, you're moving out of
 Increase Moving Affinity by one;
 Stop the action.
 
-After signing the unsigned contract when the second noun is the pen for the third time: say "Screw this! You made up your mind long ago!
+After signing the rent contract in the real estate office when the second noun is the pen for the third time: say "Screw this! You made up your mind long ago!
 
 Even if it's only rented, even if you have to work hard hours to pay for this place, it's still yours! A place you can call your own! That's the point of all this. Ignoring all this, you have to leave the home you're in now anyways, so may as well go somewhere that you can be king of.
 
 You sign the document confidently, but as you go to sign, something strange happens. The pen begins to rumble, and suddenly, rather than a smooth line of ink running out as you write, the ink suddenly starts spraying out of the pen, and floods the room...";
 Increase Moving Affinity by three;
+change the description of the rent contract to "The contract to rent a home, proudly signed.";
+now the player carries the rent contract;
 Move the player to your bedroom, without printing a room description;
 say "Suddenly, you wake up in your bedroom. It was only a dream. It must have been the fever's doing...";
 Stop the action.
