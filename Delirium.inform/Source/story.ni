@@ -53,6 +53,10 @@ When Both Sides of the Gun begins:
 	the rifle fires in three turns from now;
 	the girl shoots in four turns from now.
 
+[I don't like this but it does make it so we don't have to make as many descriptions >.> ]
+Instead of examining when Both Sides of the Gun is happening:
+	say "Now is a time for action, not careful examination!".
+
 Section 2 - Inside the Gun
 
 [TODO?: maybe this part should be looked over by someone who knows guns]
@@ -66,8 +70,7 @@ After deciding the scope of the player:
 	if the location is the gun barrel, place the Japanese girl in scope.
 
 Instead of examining outside in the gun barrel:
-	say "Outside the barrel, you can see only a Japanese girl.";
-	try examining the Japanese girl.
+	say "Outside the barrel, you can see only a Japanese girl.".
 
 Instead of going when the room gone from is the gun barrel:
 	say "You can't seem to move very far.  Almost like you don't have legs."
@@ -161,7 +164,7 @@ When Both Sides of the Gun ends:
 	move the player to the bedroom.
 
 Instead of attacking the enemy when the player holds a gun:
-	say "you shoot [the enemy].";
+	say "Like a good soldier, you shoot [the enemy].";
 	now the enemy is dead;
 	increase Military Affinity by 4.
 Instead of attacking the enemy when the player does not hold a gun:
@@ -174,7 +177,7 @@ After dropping the gun when Both Sides of the Gun is happening for the first tim
 At the time when the enemy shoots:
 	if the enemy is alive:
 		decrease Military Affinity by 2;
-		say "[The enemy] shoots you."
+		say "[The enemy] gives no mercy and fills you with bullets."
 [TODO: better prose would be good here.]
 
 Chapter 2 - Uniform
@@ -219,7 +222,12 @@ The textbook is a thing in the bedroom.  Understand "book" as the textbook.
 Understand "read [textbook]" as examining.
 Understand "consult [textbook]" as examining.
 
-Instead of examining the textbook when The More You Know has not happened:
+Typing is an action applying to one topic.
+Understand "type [text]" as typing.
+Instead of typing:
+	try answering the computer that.
+
+Instead of examining the textbook in the bedroom when The More You Know has not happened:
 	say "You start reading the textbook, but it makes absolutely no sense.  Somewhere around the part where Martians helped the South win the Civil War, you throw the book against the wall, only to find you are not where you were when you started reading.";
 	move the player to the library.
 
@@ -230,19 +238,26 @@ When The More You Know begins:
 The More You Know ends when Table 3.1.1 is empty.
 When The More You Know ends:
 	say "[bold type]Quiz over.  Your score: [Test Score]/[the number of rows in Table 3.1.1].";
-	let Modified Score be (Test Score  * 3) - 4;
+	let Modified Score be (Test Score  * 2) - 5;
 	if Modified Score > 0:
 		say "You pass.";
 	otherwise:
 		say "You fail.";
 	say "[roman type]";
 	move the player to the bedroom;
+	now the player carries the textbook;
 	now College Affinity is (College Affinity + Modified Score).
 Test Score is a number that varies.  Test Score is 0.
 
-[TODO: describe library, and computer]
-The library is a room.
-The testing computer is a person in the library.
+The library is a room.  "The walls are lined with bookshelves all the way up to the ceiling, all the way around.  However, your attention is more occupied by the giant computer taking up the center of the room."
+The testing computer is a person in the library.  It is scenery.  The description is "The computer is quite an impressive installation.  It makes up a large pillar in the center of the library.  From the pillar hang three monitors, each facing a different direction so the screen is visible from every possible location.  Below the screens are giant control panels, each containing a keyboard that has not only the English alphabet, but also accented characters, the Arabic alphabet, Japanese katakana, and some more character sets you don't recognize.
+
+And yet, for all that, there's neither a mouse nor a GUI.  Go figure."
+A monitor is a kind of thing.  Understand "screen" as a monitor.  Understand "screens" as monitors.  Three monitors are part of the testing computer.
+A keyboard is a kind of thing.  Three keyboards are part of the testing computer.
+A pillar is part of the testing computer.
+The bookshelves are scenery in the library.  The description is "On further examination, it seems that all the books on the shelves are fake.  Maybe one of them would open a secret passage, but you haven't got the time to pull on each one."  Understand "shelves" as the bookshelves.
+Books are part of the bookshelves.  The description is "Fake books.  They don't even have titles on them."
 [it's a person so Inform directs answers to it.]
 
 Every turn when The More You Know is happening:
@@ -284,17 +299,19 @@ Instead of answering the computer that when The More You Know is happening:
 [would love to allow "Hell, Michigan" but Inform's understand stuff doesn't like commas.  Probably should make a different question then.]
 Table 3.1.1 - Quiz Questions
 Topic	Quiz Question	Chapter
-"Hell/Michigan"	"Where is the center of the universe?"	1
-"Hermann Rorschach/Rorshach" or "Rorschach/Rorshach"	"Who was M.C.Escher's greatest enemy?"	4
+"Two/2"	"How many Great Exodi have happened?"	1
+"Hermann Rorschach" or "Rorschach"	"Who was M.C.Escher's greatest enemy?"	4
 "Forty-two" or "42"	"What do you get when you multiply 6 by 9?"	1
+"Dir Civil War" or "Civil War"	"Äst primer en zir globinsphere dir Martians sne ilgenmast?"	7
 "I feel fine"	"How do you feel?"	--
 
 Understand "Forty-two" or "42" as 42.
 
 Table 3.1.2 - Book entry
 Chapter	Text
-1	"As everyone knows, the universe runs in base 13.  Using this knowledge, and the recently-discovered edge of the universe behind Gallifrey 412, scientists have calculated the location of the center of the universe.  They were quite surprised to find it to in Hell, Michigan."
+1	"As everyone knows, the universe runs in base 13.  Using this knowledge, and the recently-discovered edge of the universe behind Gallifrey 412, scientists have calculated the location of the center of the universe.  They were quite surprised to find it to in Hell, Michigan.  The obvious conclusion - that the edges of the universe were Heaven - prompted the Third Great Exodus in 2034, twenty years from now."
 4	"Under the guise of making amends, Rorschach made his way into the center of the complex.  At the point where all stairs meet, he made his move, using a ink-stained kerchief to plunge the area into darkness.  From there, he stole away into the bottom-most depths of the dungeon, where he found his prize: the fabled Bending Triangle of Escher."
+7	"De flergunsterg sne horgenmätz dir heggenütz.  Smebog sne jebudé åst morgen.  Ay mongentenks ïr walgenmatzit.  Ze Floggenue an gerené börk börk börk.  En dir Civil War ur mastingetsit fûr orgentansin.  Mer forgentats in dêr eigenwhatsits.  Orp Martians le gorchen en marewîl lopsis.  Mure cidowas en florgenshäks efermos."
 [TODO: add more Q/As]
 
 Chapter 2 - Bottle
@@ -318,7 +335,7 @@ The rent contract is a thing in the bedroom. Understand "contract" as the rent c
 
 Understand "read [contract]" as examining.
 
-Instead of examining the rent contract when Making a Commitment has not happened:
+Instead of examining the rent contract in the bedroom when Making a Commitment has not happened:
 	say "You try to understand the legal-ese that the contract was written in, becoming absorbed in trying to understand it all. Soon, you lose all track of time and place trying to understand the ridiculous wording...";
 	move the player to the real estate office.
 
