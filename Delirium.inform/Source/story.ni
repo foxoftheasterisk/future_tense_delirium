@@ -20,7 +20,7 @@ Military Affinity is a number that varies.  Military Affinity is 0.
 Chapter 1 - Gun 
 
 [it's weird, for all the text in here, this chapter is actually really short.]
-Shooting is an action applying to one thing.
+Shooting is an action applying to one visible thing.
 Understand "shoot [something]" as shooting.
 
 Instead of shooting when the player holds a gun:
@@ -154,18 +154,28 @@ The Japanese man is a person.  He is wearing camoflauge.  He is holding a submac
 
 [TODO: get some text in here.]
 [TODO: add an alternate ending.]
-Both Sides of the Gun ends when the enemy is dead.
+Both Sides of the Gun ends in victory when the enemy is dead.
+Both Sides of the Gun ends in defeat when the player is dead.
 When Both Sides of the Gun ends:
+	say "Suddenly, you are back in";
 	move the player to the bedroom.
 
 Instead of attacking the enemy when the player holds a gun:
-	say "you shoot [the enemy]";
-	now the enemy is dead.
+	say "you shoot [the enemy].";
+	now the enemy is dead;
+	increase Military Affinity by 4.
 Instead of attacking the enemy when the player does not hold a gun:
 	say "You'll have to pick up your weapon first."
 
+After dropping the gun when Both Sides of the Gun is happening for the first time:
+	decrease Military Affinity by 2;
+	say "Sick of conflict, you throw your gun to the ground."
+
 At the time when the enemy shoots:
-	do nothing.
+	if the enemy is alive:
+		decrease Military Affinity by 2;
+		say "[The enemy] shoots you."
+[TODO: better prose would be good here.]
 
 Chapter 2 - Uniform
 
@@ -189,10 +199,12 @@ Jenkins' grave is a supporter in the funeral.
 After putting something on the grave for the first time (this is the paying respect rule):
 	if the noun is the medal:
 		say "He deserves it more than you.  Good man, Jenkins.";
+		increase Military Affinity by 1;
 	if the noun is the lighter:
 		say "You always felt you should return it.  He'd never let you, though.";
 	if the noun is the rifle:
-		say "You won't be needing it anymore.  You're done for good."
+		say "You won't be needing it anymore.  You're done for good.";
+		decrease Military Affinity by 3.
 
 Part 3 - College
 
@@ -208,7 +220,7 @@ Understand "read [textbook]" as examining.
 Understand "consult [textbook]" as examining.
 
 Instead of examining the textbook when The More You Know has not happened:
-	say "You start reading the textbook, but it makes no sense and is.. just..... so.......... bo........ring...........................................";
+	say "You start reading the textbook, but it makes absolutely no sense.  Somewhere around the part where Martians helped the South win the Civil War, you throw the book against the wall, only to find you are not where you were when you started reading.";
 	move the player to the library.
 
 The More You Know is a scene.
@@ -217,8 +229,14 @@ When The More You Know begins:
 	move the textbook to the library.
 The More You Know ends when Table 3.1.1 is empty.
 When The More You Know ends:
-	move the player to the bedroom;
+	say "[bold type]Quiz over.  Your score: [Test Score]/[the number of rows in Table 3.1.1].";
 	let Modified Score be (Test Score  * 3) - 4;
+	if Modified Score > 0:
+		say "You pass.";
+	otherwise:
+		say "You fail.";
+	say "[roman type]";
+	move the player to the bedroom;
 	now College Affinity is (College Affinity + Modified Score).
 Test Score is a number that varies.  Test Score is 0.
 
@@ -267,6 +285,7 @@ Instead of answering the computer that when The More You Know is happening:
 Table 3.1.1 - Quiz Questions
 Topic	Quiz Question	Chapter
 "Hell/Michigan"	"Where is the center of the universe?"	1
+"Hermann Rorschach/Rorshach" or "Rorschach/Rorshach"	"Who was M.C.Escher's greatest enemy?"	4
 "Forty-two" or "42"	"What do you get when you multiply 6 by 9?"	1
 "I feel fine"	"How do you feel?"	--
 
@@ -275,6 +294,7 @@ Understand "Forty-two" or "42" as 42.
 Table 3.1.2 - Book entry
 Chapter	Text
 1	"As everyone knows, the universe runs in base 13.  Using this knowledge, and the recently-discovered edge of the universe behind Gallifrey 412, scientists have calculated the location of the center of the universe.  They were quite surprised to find it to in Hell, Michigan."
+4	"Under the guise of making amends, Rorschach made his way into the center of the complex.  At the point where all stairs meet, he made his move, using a ink-stained kerchief to plunge the area into darkness.  From there, he stole away into the bottom-most depths of the dungeon, where he found his prize: the fabled Bending Triangle of Escher."
 [TODO: add more Q/As]
 
 Chapter 2 - Bottle
@@ -299,7 +319,7 @@ The rent contract is a thing in the bedroom. Understand "contract" as the rent c
 Understand "read [contract]" as examining.
 
 Instead of examining the rent contract when Making a Commitment has not happened:
-	say "You try to understand the legal-ese that the contract was written in, becoming absorbed in trying to understand it all. Soon, you feel as if you've lost track of time and place in trying to understand this ridiculous wording...";
+	say "You try to understand the legal-ese that the contract was written in, becoming absorbed in trying to understand it all. Soon, you lose all track of time and place trying to understand the ridiculous wording...";
 	move the player to the real estate office.
 
 Making a Commitment is a scene.
@@ -308,11 +328,11 @@ Making a Commitment begins when the player is in the real estate office.
 
 Section 2 - The Real Estate Office
 
-The real estate office is a room."You find yourself in an office of a real estate agent. In front of you, on a desk, is a pen, and that rent contract.
+The real estate office is a room."You find yourself in an office of a real estate agent.
 
-After having spent considerable time looking through properties, you think you've found the right one. Comfortably near all the major businesses; Decently priced; Has all the amenities you'll need. It almost feels too good to be true."
+After having spent considerable time looking through properties, you think you've found the right one. Comfortably near all the major businesses; decently priced; has all the amenities you'll need...  It almost feels too good to be true."
 
-The desk is scenery in the real estate office.  The pen is on the desk.  The unsigned contract is on the desk.
+The desk is a thing in the real estate office.  "On the desk in front of you lies the rent contract and a pen with which to sign it."  The pen is on the desk.  The unsigned contract is on the desk.
 
 The pen is an undescribed thing."A normal ink pen. One of the ones you get in a huge package of, like, fifty of them..."
 
@@ -321,12 +341,19 @@ The unsigned contract is an undescribed thing. "The contract for the property yo
 Instead of taking the unsigned contract:
 	say "There's no reason to take the contract now. You haven't even signed it yet."
 
-The real estate agent is a person in the real estate office. The description is "An old man, who has probably had years of experience selling homes and renting properties behind him. He's staring at you intently, seemingly analyzing your every action."
+The real estate agent is a person in the real estate office.  "The real estate agent scrutinizes you from across the desk." The description is "An old man, who has probably had years of experience selling homes and renting properties behind him. He's staring at you intently, seemingly analyzing your every action."
 
 Signing is an action applying to two things.
 Understand "Sign [something] with [something]" as signing.
 Check signing when the second noun is not the pen:
 	say "You can't write with [the second noun]!";
 	stop the action.
+Check signing when the second noun is the noun:
+	say "You can't seem to bend [the noun] in that way.";
+	stop the action.
 Report signing: 
 	say "You vandalize [the noun].".
+
+Chapter 2 - Paycheck
+
+Chapter 3 - Lingerie
