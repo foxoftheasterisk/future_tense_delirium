@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x022FA788" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x01397070" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x022FA788"/>
-  <item nodeId="node-0x022FA788">
+  <activeNode nodeId="node-0x01397070"/>
+  <item nodeId="node-0x01397070">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">Beep! Beep! Beep! Beep!&#x000A;&#x000A;You wake up in a jolt! It's morning, you think... As you think this, your head is suddenly overcome by a wave of horrible pain. A fever, now of all times?&#x000A;&#x000A;You've been given so much time to prepare to leave home, but you put it off. You procrastinated and wasted time. Then, when you knew it could wait no longer, THEN you decided to start researching, and look where it's left you? You've been trudging through all this research for so long, that you've gone and overworked yourself, and earned a fever for it.&#x000A;&#x000A;...Anyways, you have to make a decision soon. There are many paths ahead of you, and only one of them is going to be the one that makes you truly happy. You only have so long til your parents just up and kick you out, so it'd be best to make your decision soon.&#x000A;&#x000A;Future-Tense Delirium&#x000A;An Interactive Fiction by Steven Hack and Rhys Larkins&#x000A;Release 1 / Serial number 130315 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;Your bedroom&#x000A;The same old room you've always been in since who knows when. Sigh... you're gonna miss this old place...&#x000A;&#x000A;You can see a rifle, a textbook and a rent contract here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Beep! Beep! Beep! Beep!&#x000A;&#x000A;You wake up in a jolt! It's morning, you think... As you think this, your head is suddenly overcome by a wave of horrible pain. A fever, now of all times?&#x000A;&#x000A;You were given so much time to prepare to leave home, but you put it off. You procrastinated and wasted time. Then, when you knew it could wait no longer, THEN you decided to start researching, and look where it's left you? You've been trudging through all this research for so long that you've gone and overworked yourself, and earned a fever for it.&#x000A;&#x000A;You try to light a cigarette, but a wave of nausea overcomes you, and you think better of it.&#x000A;&#x000A;...Anyway, you have to make a decision soon. There are many paths ahead of you, and only one of them is going to be the one that makes you truly happy. You only have so long til your parents just up and kick you out, so it'd be best to make your decision soon.&#x000A;&#x000A;Future-Tense Delirium&#x000A;An Interactive Fiction by Steven Hack and Rhys Larkins&#x000A;Release 1 / Serial number 130315 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;Your bedroom&#x000A;The same old room you've always been in since who knows when. Sigh... you're gonna miss this old place...&#x000A;&#x000A;You can see a rifle, a textbook and a rent contract here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x022FA7F8"/>
-      <child nodeId="node-0x022FAB08"/>
-      <child nodeId="node-0x022FAB78"/>
-      <child nodeId="node-0x022FACC8"/>
-      <child nodeId="node-0x022FBDE8"/>
-      <child nodeId="node-0x022FBFA8"/>
-      <child nodeId="node-0x022FC398"/>
-      <child nodeId="node-0x022FF748"/>
-      <child nodeId="node-0x022FF7B8"/>
-      <child nodeId="node-0x022FF828"/>
+      <child nodeId="node-0x01397148"/>
+      <child nodeId="node-0x013A7BC0"/>
+      <child nodeId="node-0x013A7C98"/>
+      <child nodeId="node-0x013A8750"/>
+      <child nodeId="node-0x013A8EE8"/>
+      <child nodeId="node-0x013A9E50"/>
+      <child nodeId="node-0x013AB3D0"/>
+      <child nodeId="node-0x01389AA0"/>
+      <child nodeId="node-0x01389D10"/>
+      <child nodeId="node-0x0138A4A0"/>
     </children>
   </item>
-  <item nodeId="node-0x022FA7F8">
+  <item nodeId="node-0x01397148">
     <command xml:space="preserve">take gun</command>
     <result xml:space="preserve">You try taking the rifle, but as you approach it you instead find yourself falling...&#x000A;&#x000A;Darkness.&#x000A;You are cramped into a tight, dark space with metal surrounding you in all directions.&#x000A;&#x000A;Suddenly you hear a deafening bang.&#x000A;&#x000A;As your ears begin to clear up you hear a cacophany of other noises: sounds of thunder, sounds of yelling and stamping feet.  You hear the sounds of a battlefield.&#x000A;&#x000A;Another gunshot sounds from incredibly nearby.  Moments later, you finally see light.&#x000A;&#x000A;gun barrel&#x000A;You are in one end of a rifle barrel.  Nearby, the hammer lies still, blocking one end of the barrel.  Out the opening at the other end you can see a twenty-three year old Japanese girl wearing camoflauge and wielding a submachine gun.&#x000A;&#x000A;Next to you is a packed mass of gunpowder.&#x000A;&#x000A;You can also see a barrel opening here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -30,11 +30,11 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FA868"/>
-      <child nodeId="node-0x022FA948"/>
+      <child nodeId="node-0x01397248"/>
+      <child nodeId="node-0x01397480"/>
     </children>
   </item>
-  <item nodeId="node-0x022FA868">
+  <item nodeId="node-0x01397248">
     <command xml:space="preserve">take gunpowder</command>
     <result xml:space="preserve">You accidentally ignite the gunpowder!  Somehow.&#x000A;&#x000A;The mass of gunpowder explodes, and you are sent flying out of the rifle.&#x000A;&#x000A;Your bedroom&#x000A;You can see a textbook here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -42,10 +42,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FA8D8"/>
+      <child nodeId="node-0x01397358"/>
     </children>
   </item>
-  <item nodeId="node-0x022FA8D8">
+  <item nodeId="node-0x01397358">
     <command xml:space="preserve">inv</command>
     <result xml:space="preserve">You are carrying:&#x000A;  a rifle&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -53,7 +53,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x022FA948">
+  <item nodeId="node-0x01397480">
     <command xml:space="preserve">light powder</command>
     <result xml:space="preserve">The mass of gunpowder explodes, and you are sent flying out of the rifle.&#x000A;&#x000A;battlefield&#x000A;A Japanese girl lies here, a bullet through her heart.&#x000A;&#x000A;You can also see a Japanese man here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -61,10 +61,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FA9B8"/>
+      <child nodeId="node-0x01388A98"/>
     </children>
   </item>
-  <item nodeId="node-0x022FA9B8">
+  <item nodeId="node-0x01388A98">
     <command xml:space="preserve">drop gun</command>
     <result xml:space="preserve">(the rifle)&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -72,10 +72,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FAA28"/>
+      <child nodeId="node-0x01388B90"/>
     </children>
   </item>
-  <item nodeId="node-0x022FAA28">
+  <item nodeId="node-0x01388B90">
     <command xml:space="preserve">take gun</command>
     <result xml:space="preserve">(the rifle)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -83,10 +83,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FAA98"/>
+      <child nodeId="node-0x01388E30"/>
     </children>
   </item>
-  <item nodeId="node-0x022FAA98">
+  <item nodeId="node-0x01388E30">
     <command xml:space="preserve">scenes</command>
     <result xml:space="preserve">Scene 'Entire Game' playing (for 4 mins now)&#x000A;Scene 'Both Sides of the Gun' playing (for 4 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -94,7 +94,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x022FAB08">
+  <item nodeId="node-0x013A7BC0">
     <command xml:space="preserve">examine gun</command>
     <result xml:space="preserve">trolololololol&#x000A;gun barrel&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -102,7 +102,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x022FAB78">
+  <item nodeId="node-0x013A7C98">
     <command xml:space="preserve">jump gun</command>
     <result xml:space="preserve">I only understood you as far as wanting to jump.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -110,10 +110,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FABE8"/>
+      <child nodeId="node-0x013A7E38"/>
     </children>
   </item>
-  <item nodeId="node-0x022FABE8">
+  <item nodeId="node-0x013A7E38">
     <command xml:space="preserve">jump shark</command>
     <result xml:space="preserve">I only understood you as far as wanting to jump.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -121,10 +121,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FAC58"/>
+      <child nodeId="node-0x013A8048"/>
     </children>
   </item>
-  <item nodeId="node-0x022FAC58">
+  <item nodeId="node-0x013A8048">
     <command xml:space="preserve">kill gun</command>
     <result xml:space="preserve">You try attacking the gun, but as you approach it you find yourself falling into the barrel.&#x000A;&#x000A;gun barrel&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -132,7 +132,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x022FACC8">
+  <item nodeId="node-0x013A8750">
     <command xml:space="preserve">take rifle</command>
     <result xml:space="preserve">You try taking the rifle, but as you approach it you instead find yourself falling...&#x000A;&#x000A;You are cramped into a tight, dark space with metal surrounding you in all directions.&#x000A;&#x000A;Suddenly you hear a deafening bang.&#x000A;&#x000A;As your ears begin to clear up you hear a cacophany: sounds of thunder, of yelling and stamping feet.  You hear the sounds of a battlefield.&#x000A;&#x000A;Another gunshot sounds from incredibly close.  Moments later, you finally see light.&#x000A;&#x000A;gun barrel&#x000A;You are in one end of a rifle barrel.  Nearby, the hammer lies still, blocking one end of the barrel.  Out the opening at the other end you can see a twenty-three year old Japanese Japanese girl wearing camoflauge and wielding a submachine gun.&#x000A;&#x000A;Next to you is a packed mass of gunpowder.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -140,10 +140,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FAD38"/>
+      <child nodeId="node-0x013A8878"/>
     </children>
   </item>
-  <item nodeId="node-0x022FAD38">
+  <item nodeId="node-0x013A8878">
     <command xml:space="preserve">examine face</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -151,11 +151,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FADA8"/>
-      <child nodeId="node-0x022FAE88"/>
+      <child nodeId="node-0x013A8990"/>
+      <child nodeId="node-0x013A8BD0"/>
     </children>
   </item>
-  <item nodeId="node-0x022FADA8">
+  <item nodeId="node-0x013A8990">
     <command xml:space="preserve">wait</command>
     <result xml:space="preserve">Time passes.&#x000A;&#x000A;You hear a click, and the hammer begins to pull away from you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -163,10 +163,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FAE18"/>
+      <child nodeId="node-0x013A8AE0"/>
     </children>
   </item>
-  <item nodeId="node-0x022FAE18">
+  <item nodeId="node-0x013A8AE0">
     <command xml:space="preserve">wait</command>
     <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -174,7 +174,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x022FAE88">
+  <item nodeId="node-0x013A8BD0">
     <command xml:space="preserve">examine gunpowder</command>
     <result xml:space="preserve">You see nothing special about the mass of gunpowder.&#x000A;&#x000A;You hear a click, and the hammer begins to pull away from you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -182,10 +182,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FBD78"/>
+      <child nodeId="node-0x013A8D68"/>
     </children>
   </item>
-  <item nodeId="node-0x022FBD78">
+  <item nodeId="node-0x013A8D68">
     <command xml:space="preserve">x hammer</command>
     <result xml:space="preserve">You see nothing special about the hammer.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -193,7 +193,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x022FBDE8">
+  <item nodeId="node-0x013A8EE8">
     <command xml:space="preserve">kick gun</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -201,11 +201,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FBE58"/>
-      <child nodeId="node-0x022FBEC8"/>
+      <child nodeId="node-0x013A9168"/>
+      <child nodeId="node-0x013A9638"/>
     </children>
   </item>
-  <item nodeId="node-0x022FBE58">
+  <item nodeId="node-0x013A9168">
     <command xml:space="preserve">take gun</command>
     <result xml:space="preserve">You try taking the rifle, but as you approach it you instead find yourself falling...&#x000A;&#x000A;gun barrel&#x000A;This is a room description.&#x000A;&#x000A;This is a scene beginning text.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -213,7 +213,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x022FBEC8">
+  <item nodeId="node-0x013A9638">
     <command xml:space="preserve">eat gun</command>
     <result xml:space="preserve">(first taking the rifle)&#x000A;You try taking the rifle, but as you approach it you instead find yourself falling...&#x000A;&#x000A;You are cramped into a tight space with metal surrounding you in all directions.&#x000A;&#x000A;Suddenly you hear a deafening bang.&#x000A;&#x000A;As your ears begin to clear up you hear a cacophany: sounds of thunder, of yelling and stamping feet.  You hear the sounds of a battlefield.&#x000A;&#x000A;Another gunshot sounds from incredibly close.  Moments later, you finally see light.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -221,10 +221,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FBF38"/>
+      <child nodeId="node-0x013A9750"/>
     </children>
   </item>
-  <item nodeId="node-0x022FBF38">
+  <item nodeId="node-0x013A9750">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">gun barrel&#x000A;You are in one end of a rifle barrel.  Nearby, the hammer lies slack, nearly out of your view.  Out the opening at the other end of the barrel you can see the face of a twenty-three year old Japanese girl wearing camoflauge.&#x000A;&#x000A;Next to you is a packed mass of gunpowder.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -232,7 +232,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x022FBFA8">
+  <item nodeId="node-0x013A9E50">
     <command xml:space="preserve">eat gun</command>
     <result xml:space="preserve">(first taking the rifle)&#x000A;You try taking the rifle, but as you approach it you instead find yourself falling...&#x000A;&#x000A;You are cramped into a tight, dark space with metal surrounding you in all directions.&#x000A;&#x000A;Suddenly you hear a deafening bang.&#x000A;&#x000A;As your ears begin to clear up you hear a cacophany: sounds of thunder, of yelling and stamping feet.  You hear the sounds of a battlefield.&#x000A;&#x000A;Another gunshot sounds from incredibly close.  Moments later, you finally see light.&#x000A;&#x000A;gun barrel&#x000A;You are in one end of a rifle barrel.  Nearby, the hammer lies still, blocking one end of the barrel.  Out the opening at the other end you can see the face of a twenty-three year old Japanese girl wearing camoflauge.&#x000A;&#x000A;Next to you is a packed mass of gunpowder.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -240,11 +240,11 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FC018"/>
-      <child nodeId="node-0x022FC088"/>
+      <child nodeId="node-0x013AA1A0"/>
+      <child nodeId="node-0x013AA3F0"/>
     </children>
   </item>
-  <item nodeId="node-0x022FC018">
+  <item nodeId="node-0x013AA1A0">
     <command xml:space="preserve">showme gunpowder</command>
     <result xml:space="preserve">pile of gunpowder - thing&#x000A;location: in the gun barrel&#x000A;singular-named, improper-named; unlit, inedible, fixed in place, scenery&#x000A;printed name: "pile of gunpowder"&#x000A;printed plural name: none&#x000A;indefinite article: none&#x000A;description: none&#x000A;initial appearance: none&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -252,7 +252,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x022FC088">
+  <item nodeId="node-0x013AA3F0">
     <command xml:space="preserve">take powder</command>
     <result xml:space="preserve">You take the gunpowder, removing it from its place at the hammer's base.&#x000A;&#x000A;You hear a click, and the hammer begins to pull away from you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -260,10 +260,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FC0F8"/>
+      <child nodeId="node-0x013AA568"/>
     </children>
   </item>
-  <item nodeId="node-0x022FC0F8">
+  <item nodeId="node-0x013AA568">
     <command xml:space="preserve">dance</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -271,10 +271,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FC168"/>
+      <child nodeId="node-0x013AA738"/>
     </children>
   </item>
-  <item nodeId="node-0x022FC168">
+  <item nodeId="node-0x013AA738">
     <command xml:space="preserve">jump</command>
     <result xml:space="preserve">You jump on the spot, fruitlessly.&#x000A;&#x000A;The hammer springs forward and sparks.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -282,10 +282,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FC1D8"/>
+      <child nodeId="node-0x013AA8D8"/>
     </children>
   </item>
-  <item nodeId="node-0x022FC1D8">
+  <item nodeId="node-0x013AA8D8">
     <command xml:space="preserve">look out</command>
     <result xml:space="preserve">You see nothing unexpected in that direction.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -293,10 +293,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FC248"/>
+      <child nodeId="node-0x013AA9F0"/>
     </children>
   </item>
-  <item nodeId="node-0x022FC248">
+  <item nodeId="node-0x013AA9F0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">gun barrel&#x000A;You are in one end of a rifle barrel.  Nearby, the hammer lies still, blocking one end of the barrel.  Out the opening at the other end you can see the face of a twenty-three year old Japanese girl wearing camoflauge.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -304,10 +304,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FC2B8"/>
+      <child nodeId="node-0x013AAB08"/>
     </children>
   </item>
-  <item nodeId="node-0x022FC2B8">
+  <item nodeId="node-0x013AAB08">
     <command xml:space="preserve">jump</command>
     <result xml:space="preserve">You jump on the spot, fruitlessly.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -315,10 +315,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FC328"/>
+      <child nodeId="node-0x013AAC58"/>
     </children>
   </item>
-  <item nodeId="node-0x022FC328">
+  <item nodeId="node-0x013AAC58">
     <command xml:space="preserve">wait</command>
     <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -326,20 +326,21 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x022FC398">
+  <item nodeId="node-0x013AB3D0">
     <command xml:space="preserve">x gun</command>
-    <result xml:space="preserve">You try examining the rifle, but as you approach it you instead find yourself falling...&#x000A;&#x000A;Darkness.&#x000A;You are cramped into a tight, dark space with metal surrounding you in all directions.&#x000A;&#x000A;Suddenly you hear a deafening bang.&#x000A;&#x000A;As your ears clear up you hear a cacophany of other noises: thunderous rat-a-tat-a-tats, stamping feet, the occasional yell.  The sounds of a battlefield.&#x000A;&#x000A;Another gunshot sounds from incredibly nearby.  Moments later, you finally see light.&#x000A;&#x000A;gun barrel&#x000A;You are in one end of a rifle barrel.  Nearby, the hammer lies still, blocking one end of the barrel.  Out the opening at the other end you can see a twenty-three year old Japanese girl wearing camoflauge and wielding a submachine gun.&#x000A;&#x000A;Next to you is a packed mass of gunpowder.&#x000A;&#x000A;You can also see a barrel opening here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You try examining the rifle, but as you approach it you instead find yourself falling...&#x000A;&#x000A;Darkness.&#x000A;You are cramped into a tight, dark space with metal surrounding you in all directions.&#x000A;&#x000A;Suddenly you hear a deafening bang.&#x000A;&#x000A;As your ears clear up you hear a cacophany of other noises: thunderous rat-a-tat-a-tats, stamping feet, the occasional yell.  The sounds of a battlefield.&#x000A;&#x000A;Another gunshot sounds from incredibly nearby.  Moments later, you finally see light.&#x000A;&#x000A;gun barrel&#x000A;You are in one end of a rifle barrel.  Nearby, the hammer lies still, blocking one end of the barrel.  Out the opening at the other end you can see a twenty-three year old Japanese girl wearing camouflage and wielding a submachine gun.&#x000A;&#x000A;Next to you is a packed mass of gunpowder.&#x000A;&#x000A;You can also see a barrel opening here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FC408"/>
-      <child nodeId="node-0x022FF2E8"/>
-      <child nodeId="node-0x022FF358"/>
+      <child nodeId="node-0x013AB5A0"/>
+      <child nodeId="node-0x013AC358"/>
+      <child nodeId="node-0x013AC4F0"/>
+      <child nodeId="node-0x013B8278"/>
     </children>
   </item>
-  <item nodeId="node-0x022FC408">
+  <item nodeId="node-0x013AB5A0">
     <command xml:space="preserve">take powder</command>
     <result xml:space="preserve">You take the gunpowder, removing it from its place at the hammer's base.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -347,10 +348,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FC478"/>
+      <child nodeId="node-0x013AB848"/>
     </children>
   </item>
-  <item nodeId="node-0x022FC478">
+  <item nodeId="node-0x013AB848">
     <command xml:space="preserve">wait</command>
     <result xml:space="preserve">Time passes.&#x000A;&#x000A;You hear a click, and the hammer begins to pull away from you.&#x000A;&#x000A;At the same time, the Japanese girl raises her gun, pointing it at whoever's holding the gun you're in.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -358,10 +359,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FC4E8"/>
+      <child nodeId="node-0x013ABAA8"/>
     </children>
   </item>
-  <item nodeId="node-0x022FC4E8">
+  <item nodeId="node-0x013ABAA8">
     <command xml:space="preserve">out</command>
     <result xml:space="preserve">You can't seem to move very far.  Almost like you don't have legs.&#x000A;&#x000A;The hammer springs forward and sparks.&#x000A;However, the spark fails to light anything.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -369,10 +370,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FF128"/>
+      <child nodeId="node-0x013ABDB8"/>
     </children>
   </item>
-  <item nodeId="node-0x022FF128">
+  <item nodeId="node-0x013ABDB8">
     <command xml:space="preserve">wait</command>
     <result xml:space="preserve">Time passes.&#x000A;&#x000A;The girl begins firing, and you feel a sense of vertigo as the rifle tilts upwards...&#x000A;&#x000A;battlefield&#x000A;Your comrade Jenkins lies fallen here, riddled with bullets.&#x000A;&#x000A;You can also see a twenty-three year old Japanese girl here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -380,10 +381,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FF198"/>
+      <child nodeId="node-0x013AC000"/>
     </children>
   </item>
-  <item nodeId="node-0x022FF198">
+  <item nodeId="node-0x013AC000">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">battlefield&#x000A;Your comrade Jenkins lies fallen here, riddled with bullets.&#x000A;&#x000A;You can also see a twenty-three year old Japanese girl here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -391,10 +392,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FF208"/>
+      <child nodeId="node-0x013AC120"/>
     </children>
   </item>
-  <item nodeId="node-0x022FF208">
+  <item nodeId="node-0x013AC120">
     <command xml:space="preserve">shoot girl</command>
     <result xml:space="preserve">you shoot the twenty-three year old Japanese girl&#x000A;Your bedroom&#x000A;You can see a textbook here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -402,10 +403,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FF278"/>
+      <child nodeId="node-0x013AC230"/>
     </children>
   </item>
-  <item nodeId="node-0x022FF278">
+  <item nodeId="node-0x013AC230">
     <command xml:space="preserve">inv</command>
     <result xml:space="preserve">You are carrying:&#x000A;  a rifle&#x000A;  a mass of gunpowder&#x000A;  a lighter&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -413,7 +414,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x022FF2E8">
+  <item nodeId="node-0x013AC358">
     <command xml:space="preserve">look opening</command>
     <result xml:space="preserve">You see nothing special about the barrel opening.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -421,7 +422,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x022FF358">
+  <item nodeId="node-0x013AC4F0">
     <command xml:space="preserve">x camo</command>
     <result xml:space="preserve">You see nothing special about the camoflauge.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -429,10 +430,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FF3C8"/>
+      <child nodeId="node-0x013AC7E0"/>
     </children>
   </item>
-  <item nodeId="node-0x022FF3C8">
+  <item nodeId="node-0x013AC7E0">
     <command xml:space="preserve">x gun</command>
     <result xml:space="preserve">You see nothing special about the submachine gun.&#x000A;&#x000A;You hear a click, and the hammer begins to pull away from you.&#x000A;&#x000A;At the same time, the Japanese girl raises her gun, pointing it at whoever's holding the gun you're in.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -440,10 +441,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FF438"/>
+      <child nodeId="node-0x013ACB60"/>
     </children>
   </item>
-  <item nodeId="node-0x022FF438">
+  <item nodeId="node-0x013ACB60">
     <command xml:space="preserve">x girl</command>
     <result xml:space="preserve">You see nothing special about the twenty-three year old Japanese girl.&#x000A;&#x000A;The hammer springs forward and sparks.&#x000A;&#x000A;The mass of gunpowder explodes, and you are sent flying out of the rifle.&#x000A;&#x000A;battlefield&#x000A;A Japanese girl lies here, a bullet through her heart.&#x000A;&#x000A;You can also see a Japanese man here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -451,10 +452,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FF4A8"/>
+      <child nodeId="node-0x013ACC78"/>
     </children>
   </item>
-  <item nodeId="node-0x022FF4A8">
+  <item nodeId="node-0x013ACC78">
     <command xml:space="preserve">score</command>
     <result xml:space="preserve">There is no score in this story.&#x000A;&#x000A;Military: 0&#x000A;College: 0&#x000A;Moving: 0&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -462,10 +463,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FF518"/>
+      <child nodeId="node-0x013ACD90"/>
     </children>
   </item>
-  <item nodeId="node-0x022FF518">
+  <item nodeId="node-0x013ACD90">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">battlefield&#x000A;A Japanese girl lies here, a bullet through her heart.&#x000A;&#x000A;You can also see a Japanese man here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -473,10 +474,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FF588"/>
+      <child nodeId="node-0x013ACEB0"/>
     </children>
   </item>
-  <item nodeId="node-0x022FF588">
+  <item nodeId="node-0x013ACEB0">
     <command xml:space="preserve">shoot man</command>
     <result xml:space="preserve">you shoot the Japanese man.&#x000A;&#x000A;Suddenly, you are back in&#x000A;Your bedroom&#x000A;You can see a medal, a textbook and a rent contract here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -484,10 +485,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FF5F8"/>
+      <child nodeId="node-0x01389098"/>
     </children>
   </item>
-  <item nodeId="node-0x022FF5F8">
+  <item nodeId="node-0x01389098">
     <command xml:space="preserve">score</command>
     <result xml:space="preserve">There is no score in this story.&#x000A;&#x000A;Military: 4&#x000A;College: 0&#x000A;Moving: 0&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -495,10 +496,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FF668"/>
+      <child nodeId="node-0x013891F0"/>
     </children>
   </item>
-  <item nodeId="node-0x022FF668">
+  <item nodeId="node-0x013891F0">
     <command xml:space="preserve">x comtract</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -506,10 +507,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FF6D8"/>
+      <child nodeId="node-0x01389830"/>
     </children>
   </item>
-  <item nodeId="node-0x022FF6D8">
+  <item nodeId="node-0x01389830">
     <command xml:space="preserve">x contract</command>
     <result xml:space="preserve">You try to understand the legal-ese that the contract was written in, becoming absorbed in trying to understand it all. Soon, you feel as if you've lost track of time and place in trying to understand this ridiculous wording...&#x000A;&#x000A;real estate office&#x000A;You find yourself in an office of a real estate agent. In front of you, on a desk, is a pen, and that rent contract.&#x000A;&#x000A;After having spent considerable time looking through properties, you think you've found the right one. Comfortably near all the major businesses; Decently priced; Has all the amenities you'll need. It almost feels too good to be true.&#x000A;&#x000A;You can see a real estate agent here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -517,7 +518,59 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x022FF748">
+  <item nodeId="node-0x013B8278">
+    <command xml:space="preserve">x powder</command>
+    <result xml:space="preserve">Now is a time for action, not careful examination!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x013D9DA8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x013D9DA8">
+    <command xml:space="preserve">x powder</command>
+    <result xml:space="preserve">Now is a time for action, not careful examination!&#x000A;&#x000A;You hear a click, and the hammer begins to pull away from you.&#x000A;&#x000A;At the same time, the Japanese girl raises her gun, pointing it at whoever's holding the gun you're in.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x013C21E0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x013C21E0">
+    <command xml:space="preserve">examine powder</command>
+    <result xml:space="preserve">Now is a time for action, not careful examination!&#x000A;&#x000A;The hammer springs forward and sparks.&#x000A;&#x000A;The mass of gunpowder explodes, and you are sent flying out of the rifle.&#x000A;&#x000A;battlefield&#x000A;For what little time you have to look around, all you see is a large, treeless wasteland. You can hear gunshots coming from seemingly every direction.&#x000A;&#x000A;A Japanese man stands here with a submachine gun, not having noticed you yet.&#x000A;&#x000A;The Japanese girl lies here, a bullet from your rifle through her heart.&#x000A;&#x000A;You ready your rifle and prepare for the fray.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x013E8288"/>
+    </children>
+  </item>
+  <item nodeId="node-0x013E8288">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">battlefield&#x000A;For what little time you have to look around, all you see is a large, treeless wasteland. You can hear gunshots coming from seemingly every direction.&#x000A;&#x000A;A Japanese man stands here with a submachine gun, not having noticed you yet.&#x000A;&#x000A;The Japanese girl lies here, a bullet from your rifle through her heart.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x013B6960"/>
+    </children>
+  </item>
+  <item nodeId="node-0x013B6960">
+    <command xml:space="preserve">shoot man</command>
+    <result xml:space="preserve">Like a good soldier, you shoot the Japanese man.&#x000A;&#x000A;The moment the corpse of a Japanese man falls to the ground, you suddenly start to feel faint, and fall to the ground.&#x000A;&#x000A;As your consciousness fades, you only feel relief that you've brought this whole conflict one step closer to victory, that you've done one more thing to keep your friends and family safe, and one more thing in service to your country.&#x000A;&#x000A;Suddenly, you open your eyes again. It was all just a dream; A product of your high fever. You are back in&#x000A;Your bedroom&#x000A;The same old room you've always been in since who knows when. Sigh... you're gonna miss this old place...&#x000A;&#x000A;You can see a textbook and a rent contract here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x01389AA0">
     <command xml:space="preserve">x textbook</command>
     <result xml:space="preserve">You start reading the textbook, but it makes no sense and is.. just..... so.......... bo........ring...........................................&#x000A;&#x000A;library&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -525,7 +578,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x022FF7B8">
+  <item nodeId="node-0x01389D10">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">You start reading the textbook, but it makes no sense and is.. just..... so.......... bo........ring...........................................&#x000A;&#x000A;library&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -533,7 +586,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x022FF828">
+  <item nodeId="node-0x0138A4A0">
     <command xml:space="preserve">kill gun</command>
     <result xml:space="preserve">You try attacking the rifle, but as you approach it you instead find yourself falling...&#x000A;&#x000A;Darkness.&#x000A;You are cramped into a tight, dark space with metal surrounding you in all directions.&#x000A;&#x000A;Suddenly you hear a deafening bang.&#x000A;&#x000A;As your ears begin to clear up you hear a cacophany of other noises: sounds of thunder, sounds of yelling and stamping feet.  You hear the sounds of a battlefield.&#x000A;&#x000A;Another gunshot sounds from incredibly nearby.  Moments later, you finally see light.&#x000A;&#x000A;gun barrel&#x000A;You are in one end of a rifle barrel.  Nearby, the hammer lies still, blocking one end of the barrel.  Out the opening at the other end you can see a twenty-three year old Japanese girl wearing camoflauge and wielding a submachine gun.&#x000A;&#x000A;Next to you is a packed mass of gunpowder.&#x000A;&#x000A;You can also see a barrel opening here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -541,15 +594,14 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x022FF898"/>
-      <child nodeId="node-0x02301F98"/>
-      <child nodeId="node-0x023022A8"/>
-      <child nodeId="node-0x02304910"/>
-      <child nodeId="node-0x02307248"/>
-      <child nodeId="node-0x02307718"/>
+      <child nodeId="node-0x0138A670"/>
+      <child nodeId="node-0x0138B7D8"/>
+      <child nodeId="node-0x0138C688"/>
+      <child nodeId="node-0x0138E558"/>
+      <child nodeId="node-0x0138F5B0"/>
     </children>
   </item>
-  <item nodeId="node-0x022FF898">
+  <item nodeId="node-0x0138A670">
     <command xml:space="preserve">take powder</command>
     <result xml:space="preserve">You take the gunpowder, removing it from its place at the hammer's base.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -557,11 +609,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02301B38"/>
-      <child nodeId="node-0x02301E48"/>
+      <child nodeId="node-0x0138A7D8"/>
+      <child nodeId="node-0x0138B160"/>
     </children>
   </item>
-  <item nodeId="node-0x02301B38">
+  <item nodeId="node-0x0138A7D8">
     <command xml:space="preserve">inv</command>
     <result xml:space="preserve">You are carrying:&#x000A;  a rifle&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -569,10 +621,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02301BA8"/>
+      <child nodeId="node-0x0138AA48"/>
     </children>
   </item>
-  <item nodeId="node-0x02301BA8">
+  <item nodeId="node-0x0138AA48">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">You start reading the textbook, but it makes no sense and is.. just..... so.......... bo........ring...........................................&#x000A;&#x000A;library&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -580,10 +632,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02301C18"/>
+      <child nodeId="node-0x0138ABC0"/>
     </children>
   </item>
-  <item nodeId="node-0x02301C18">
+  <item nodeId="node-0x0138ABC0">
     <command xml:space="preserve">death</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -591,10 +643,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02301C88"/>
+      <child nodeId="node-0x0138AD30"/>
     </children>
   </item>
-  <item nodeId="node-0x02301C88">
+  <item nodeId="node-0x0138AD30">
     <command xml:space="preserve">die</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -602,10 +654,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02301D68"/>
+      <child nodeId="node-0x0138AEC0"/>
     </children>
   </item>
-  <item nodeId="node-0x02301D68">
+  <item nodeId="node-0x0138AEC0">
     <command xml:space="preserve">kill self</command>
     <result xml:space="preserve">Violence isn't the answer to this one.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -613,10 +665,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02301DD8"/>
+      <child nodeId="node-0x0138B040"/>
     </children>
   </item>
-  <item nodeId="node-0x02301DD8">
+  <item nodeId="node-0x0138B040">
     <command xml:space="preserve">shoot self</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -624,7 +676,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02301E48">
+  <item nodeId="node-0x0138B160">
     <command xml:space="preserve">look hammer</command>
     <result xml:space="preserve">You see nothing special about the hammer.&#x000A;&#x000A;You hear a click, and the hammer begins to pull away from you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -632,10 +684,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02301EB8"/>
+      <child nodeId="node-0x0138B278"/>
     </children>
   </item>
-  <item nodeId="node-0x02301EB8">
+  <item nodeId="node-0x0138B278">
     <command xml:space="preserve">x out</command>
     <result xml:space="preserve">Outside the barrel, you can see only a Japanese girl.&#x000A;&#x000A;You see nothing special about the twenty-three year old Japanese girl.&#x000A;&#x000A;The hammer springs forward and sparks.&#x000A;However, the spark fails to light anything.&#x000A; The girl raises her gun, pointing it at whoever's holding the gun you're in.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -643,10 +695,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02301F28"/>
+      <child nodeId="node-0x0138B518"/>
     </children>
   </item>
-  <item nodeId="node-0x02301F28">
+  <item nodeId="node-0x0138B518">
     <command xml:space="preserve">eat powder</command>
     <result xml:space="preserve">That's plainly inedible.&#x000A;&#x000A;you got shot&#x000A;battlefield&#x000A;Your comrade Jenkins lies fallen here, riddled with bullets.&#x000A;&#x000A;You can also see a twenty-three year old Japanese girl here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -654,7 +706,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02301F98">
+  <item nodeId="node-0x0138B7D8">
     <command xml:space="preserve">look out</command>
     <result xml:space="preserve">Outside the barrel, you can see only a Japanese girl.&#x000A;&#x000A;You see nothing special about the twenty-three year old Japanese girl.&#x000A;&#x000A;You hear a click, and the hammer begins to pull away from you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -662,11 +714,11 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02302008"/>
-      <child nodeId="node-0x02302238"/>
+      <child nodeId="node-0x0138B968"/>
+      <child nodeId="node-0x0138C4D0"/>
     </children>
   </item>
-  <item nodeId="node-0x02302008">
+  <item nodeId="node-0x0138B968">
     <command xml:space="preserve">out</command>
     <result xml:space="preserve">battlefield&#x000A;You can see a Japanese girl here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -674,10 +726,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02302078"/>
+      <child nodeId="node-0x0138BB00"/>
     </children>
   </item>
-  <item nodeId="node-0x02302078">
+  <item nodeId="node-0x0138BB00">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">battlefield&#x000A;You can see a Japanese girl here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -685,10 +737,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x023020E8"/>
+      <child nodeId="node-0x0138BE88"/>
     </children>
   </item>
-  <item nodeId="node-0x023020E8">
+  <item nodeId="node-0x0138BE88">
     <command xml:space="preserve">in</command>
     <result xml:space="preserve">gun barrel&#x000A;You are in one end of a rifle barrel.  Nearby, the hammer lies still, blocking one end of the barrel.  Out the opening at the other end you can see a twenty-three year old Japanese Japanese girl wearing camoflauge and wielding a submachine gun.&#x000A;&#x000A;Next to you is a packed mass of gunpowder.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -696,10 +748,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02302158"/>
+      <child nodeId="node-0x0138C028"/>
     </children>
   </item>
-  <item nodeId="node-0x02302158">
+  <item nodeId="node-0x0138C028">
     <command xml:space="preserve">look out</command>
     <result xml:space="preserve">You see nothing unexpected in that direction.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -707,10 +759,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x023021C8"/>
+      <child nodeId="node-0x0138C1C0"/>
     </children>
   </item>
-  <item nodeId="node-0x023021C8">
+  <item nodeId="node-0x0138C1C0">
     <command xml:space="preserve">x out</command>
     <result xml:space="preserve">You see nothing unexpected in that direction.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -718,7 +770,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02302238">
+  <item nodeId="node-0x0138C4D0">
     <command xml:space="preserve">kill japanese girl</command>
     <result xml:space="preserve">You can't reach into the battlefield.&#x000A;&#x000A;The hammer springs forward and sparks.&#x000A;&#x000A;The mass of gunpowder explodes, and you are sent flying out of the rifle.&#x000A;&#x000A;battlefield&#x000A;You can see a twenty-three year old Japanese girl here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -726,7 +778,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x023022A8">
+  <item nodeId="node-0x0138C688">
     <command xml:space="preserve">out</command>
     <result xml:space="preserve">You can't seem to move very far.  Almost like you don't have legs.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -734,13 +786,13 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x023043D0"/>
-      <child nodeId="node-0x02304750"/>
-      <child nodeId="node-0x023047C0"/>
-      <child nodeId="node-0x023048A0"/>
+      <child nodeId="node-0x0138C850"/>
+      <child nodeId="node-0x0138DC60"/>
+      <child nodeId="node-0x0138DDD8"/>
+      <child nodeId="node-0x0138E3E0"/>
     </children>
   </item>
-  <item nodeId="node-0x023043D0">
+  <item nodeId="node-0x0138C850">
     <command xml:space="preserve">x girl</command>
     <result xml:space="preserve">You see nothing special about the twenty-three year old Japanese girl.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -748,10 +800,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02304440"/>
+      <child nodeId="node-0x0138CA60"/>
     </children>
   </item>
-  <item nodeId="node-0x02304440">
+  <item nodeId="node-0x0138CA60">
     <command xml:space="preserve">x girl's corps</command>
     <result xml:space="preserve">I only understood you as far as wanting to examine the twenty-three year old Japanese girl's body.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -759,10 +811,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x023044B0"/>
+      <child nodeId="node-0x0138CC70"/>
     </children>
   </item>
-  <item nodeId="node-0x023044B0">
+  <item nodeId="node-0x0138CC70">
     <command xml:space="preserve">x girl's corpse</command>
     <result xml:space="preserve">I only understood you as far as wanting to examine the twenty-three year old Japanese girl's body.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -770,10 +822,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02304520"/>
+      <child nodeId="node-0x0138D158"/>
     </children>
   </item>
-  <item nodeId="node-0x02304520">
+  <item nodeId="node-0x0138D158">
     <command xml:space="preserve">in</command>
     <result xml:space="preserve">gun barrel&#x000A;You are in one end of a rifle barrel.  Nearby, the hammer lies still, blocking one end of the barrel.  Out the opening at the other end you can see a twenty-three year old Japanese girl wearing camoflauge and wielding a submachine gun.&#x000A;&#x000A;Next to you is a packed mass of gunpowder.&#x000A;&#x000A;The hammer springs forward and sparks.&#x000A;&#x000A;The mass of gunpowder explodes, and you are sent flying out of the rifle.&#x000A;&#x000A;battlefield&#x000A;You can see a twenty-three year old Japanese girl here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -781,12 +833,12 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02304590"/>
-      <child nodeId="node-0x02304600"/>
-      <child nodeId="node-0x02304670"/>
+      <child nodeId="node-0x0138D278"/>
+      <child nodeId="node-0x0138D440"/>
+      <child nodeId="node-0x0138D5B8"/>
     </children>
   </item>
-  <item nodeId="node-0x02304590">
+  <item nodeId="node-0x0138D278">
     <command xml:space="preserve">x corpse</command>
     <result xml:space="preserve">*** Run-time problem P12: Too many activities are going on at once.</result>
     <commentary xml:space="preserve"></commentary>
@@ -794,7 +846,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02304600">
+  <item nodeId="node-0x0138D440">
     <command xml:space="preserve">x girl's corpse</command>
     <result xml:space="preserve">*** Run-time problem P12: Too many activities are going on at once.</result>
     <commentary xml:space="preserve"></commentary>
@@ -802,7 +854,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02304670">
+  <item nodeId="node-0x0138D5B8">
     <command xml:space="preserve">x corps</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -810,10 +862,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x023046E0"/>
+      <child nodeId="node-0x0138D788"/>
     </children>
   </item>
-  <item nodeId="node-0x023046E0">
+  <item nodeId="node-0x0138D788">
     <command xml:space="preserve">x corpse</command>
     <result xml:space="preserve">You see nothing special about the twenty-three year old Japanese girl.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -821,7 +873,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02304750">
+  <item nodeId="node-0x0138DC60">
     <command xml:space="preserve">showme girl</command>
     <result xml:space="preserve">twenty-three year old Japanese girl - person&#x000A;    twenty-three year old Japanese girl's body (part of twenty-three year old Japanese girl) - body&#x000A;    camoflauge (worn)&#x000A;    submachine gun&#x000A;location: in the battlefield&#x000A;singular-named, improper-named; unlit, inedible, portable; male, alive&#x000A;printed name: "twenty-three year old Japanese girl"&#x000A;printed plural name: "people"&#x000A;indefinite article: none&#x000A;description: none&#x000A;initial appearance: none&#x000A;carrying capacity: 100&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -829,7 +881,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x023047C0">
+  <item nodeId="node-0x0138DDD8">
     <command xml:space="preserve">sout</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -837,10 +889,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02304830"/>
+      <child nodeId="node-0x0138E0E8"/>
     </children>
   </item>
-  <item nodeId="node-0x02304830">
+  <item nodeId="node-0x0138E0E8">
     <command xml:space="preserve">south</command>
     <result xml:space="preserve">You can't seem to move very far.  Almost like you don't have legs.&#x000A;&#x000A;You hear a click, and the hammer begins to pull away from you.&#x000A; At the same time, the Japanese girl raises her gun, pointing it at whoever's holding the gun you're in.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -848,7 +900,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x023048A0">
+  <item nodeId="node-0x0138E3E0">
     <command xml:space="preserve">x opening</command>
     <result xml:space="preserve">You see nothing special about the barrel opening.&#x000A;&#x000A;You hear a click, and the hammer begins to pull away from you.&#x000A; At the same time, the Japanese girl raises her gun, pointing it at whoever's holding the gun you're in.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -856,7 +908,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02304910">
+  <item nodeId="node-0x0138E558">
     <command xml:space="preserve">dance</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -864,10 +916,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02304980"/>
+      <child nodeId="node-0x0138E6D8"/>
     </children>
   </item>
-  <item nodeId="node-0x02304980">
+  <item nodeId="node-0x0138E6D8">
     <command xml:space="preserve">jump</command>
     <result xml:space="preserve">You jump on the spot, fruitlessly.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -875,10 +927,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x023049F0"/>
+      <child nodeId="node-0x0138EA00"/>
     </children>
   </item>
-  <item nodeId="node-0x023049F0">
+  <item nodeId="node-0x0138EA00">
     <command xml:space="preserve">take powder</command>
     <result xml:space="preserve">You take the gunpowder, removing it from its place at the hammer's base.&#x000A;&#x000A;You hear a click, and the hammer begins to pull away from you.&#x000A;&#x000A;At the same time, the Japanese girl raises her gun, pointing it at whoever's holding the gun you're in.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -886,10 +938,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02304A60"/>
+      <child nodeId="node-0x0138ECE0"/>
     </children>
   </item>
-  <item nodeId="node-0x02304A60">
+  <item nodeId="node-0x0138ECE0">
     <command xml:space="preserve">drop powder</command>
     <result xml:space="preserve">Dropped.&#x000A;&#x000A;The hammer springs forward and sparks.&#x000A;&#x000A;The mass of gunpowder explodes, and you are sent flying out of the rifle.&#x000A;&#x000A;battlefield&#x000A;You can see a the corpse of twenty-three year old Japanese girl here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -897,10 +949,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02304AD0"/>
+      <child nodeId="node-0x0138EE70"/>
     </children>
   </item>
-  <item nodeId="node-0x02304AD0">
+  <item nodeId="node-0x0138EE70">
     <command xml:space="preserve">durrrrrrrrrrrrrrr</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -908,10 +960,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02304B40"/>
+      <child nodeId="node-0x0138EFF0"/>
     </children>
   </item>
-  <item nodeId="node-0x02304B40">
+  <item nodeId="node-0x0138EFF0">
     <command xml:space="preserve">take self</command>
     <result xml:space="preserve">You are always self-possessed.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -919,10 +971,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x023070F8"/>
+      <child nodeId="node-0x0138F168"/>
     </children>
   </item>
-  <item nodeId="node-0x023070F8">
+  <item nodeId="node-0x0138F168">
     <command xml:space="preserve">x camo</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -930,10 +982,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02307168"/>
+      <child nodeId="node-0x0138F308"/>
     </children>
   </item>
-  <item nodeId="node-0x02307168">
+  <item nodeId="node-0x0138F308">
     <command xml:space="preserve">x camoflauge</command>
     <result xml:space="preserve">You see nothing special about camoflauge.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -941,10 +993,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x023071D8"/>
+      <child nodeId="node-0x0138F488"/>
     </children>
   </item>
-  <item nodeId="node-0x023071D8">
+  <item nodeId="node-0x0138F488">
     <command xml:space="preserve">shoot enemy</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -952,7 +1004,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02307248">
+  <item nodeId="node-0x0138F5B0">
     <command xml:space="preserve">light powder</command>
     <result xml:space="preserve">The mass of gunpowder explodes, and you are sent flying out of the rifle.&#x000A;&#x000A;battlefield&#x000A;A Japanese girl lies here, a bullet through her heart.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -960,10 +1012,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02307328"/>
+      <child nodeId="node-0x0138F740"/>
     </children>
   </item>
-  <item nodeId="node-0x02307328">
+  <item nodeId="node-0x0138F740">
     <command xml:space="preserve">burn girl</command>
     <result xml:space="preserve">This dangerous act would achieve little.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -971,10 +1023,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02307398"/>
+      <child nodeId="node-0x0138F8E8"/>
     </children>
   </item>
-  <item nodeId="node-0x02307398">
+  <item nodeId="node-0x0138F8E8">
     <command xml:space="preserve">burn everything</command>
     <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -982,10 +1034,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02307408"/>
+      <child nodeId="node-0x0138FAF0"/>
     </children>
   </item>
-  <item nodeId="node-0x02307408">
+  <item nodeId="node-0x0138FAF0">
     <command xml:space="preserve">take everything</command>
     <result xml:space="preserve">submachine gun: That seems to belong to the the corpse of twenty-three year old Japanese girl.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -993,64 +1045,12 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x023074E8"/>
+      <child nodeId="node-0x0138FC70"/>
     </children>
   </item>
-  <item nodeId="node-0x023074E8">
+  <item nodeId="node-0x0138FC70">
     <command xml:space="preserve">inv</command>
     <result xml:space="preserve">You are carrying:&#x000A;  a rifle&#x000A;  a lighter&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x023075C8"/>
-    </children>
-  </item>
-  <item nodeId="node-0x023075C8">
-    <command xml:space="preserve">shoot lighter</command>
-    <result xml:space="preserve">Violence isn't the answer to this one.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x023076A8"/>
-    </children>
-  </item>
-  <item nodeId="node-0x023076A8">
-    <command xml:space="preserve">burn rifle</command>
-    <result xml:space="preserve">This dangerous act would achieve little.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-0x02307718">
-    <command xml:space="preserve">remove powder</command>
-    <result xml:space="preserve">You take the gunpowder, removing it from its place at the hammer's base.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02307788"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02307788">
-    <command xml:space="preserve">ignite powder</command>
-    <result xml:space="preserve">The mass of gunpowder explodes, and you are sent flying out of the rifle.&#x000A;&#x000A;battlefield&#x000A;A Japanese girl lies here, a bullet through her heart.&#x000A;&#x000A;You can also see a Japanese man here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x023077F8"/>
-    </children>
-  </item>
-  <item nodeId="node-0x023077F8">
-    <command xml:space="preserve">inv</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a rifle&#x000A;  a mass of gunpowder&#x000A;  a lighter&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>

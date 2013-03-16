@@ -8,22 +8,20 @@ When play begins: say "Beep! Beep! Beep! Beep!
 
 You wake up in a jolt! It's morning, you think... As you think this, your head is suddenly overcome by a wave of horrible pain. A fever, now of all times?
 
-You've been given so much time to prepare to leave home, but you put it off. You procrastinated and wasted time. Then, when you knew it could wait no longer, THEN you decided to start researching, and look where it's left you? You've been trudging through all this research for so long, that you've gone and overworked yourself, and earned a fever for it.
+You were given so much time to prepare to leave home, but you put it off. You procrastinated and wasted time. Then, when you knew it could wait no longer, THEN you decided to start researching, and look where it's left you? You've been trudging through all this research for so long that you've gone and overworked yourself, and earned a fever for it.
 
 You try to light a cigarette, but a wave of nausea overcomes you, and you think better of it.
 
-...Anyways, you have to make a decision soon. There are many paths ahead of you, and only one of them is going to be the one that makes you truly happy. You only have so long til your parents just up and kick you out, so it'd be best to make your decision soon.".
+...Anyway, you have to make a decision soon. There are many paths ahead of you, and only one of them is going to be the one that makes you truly happy. You only have so long til your parents just up and kick you out, so it'd be best to make your decision soon.".
 
 Your bedroom is a room. The description of your bedroom is "The same old room you've always been in since who knows when. Sigh... you're gonna miss this old place..."
 The lighter is a thing.  The player carries the lighter.
-[this is needed for the gun section - otherwise the player has no means to ignite the gunpowder.
-Not sure how to explain its presence.  We need to make the player aware of it.
-Maybe it could be in another military section that's a prerequisite for gun?]
+[this is needed for the gun section - otherwise the player has no means to ignite the gunpowder.  it's a little out of place, but oh well.]
 
 Report requesting the score:
 	say "Military: [Military Affinity][line break]College: [College Affinity][line break]Moving: [Moving Affinity]".
 
-Instead of doing something other than examining, looking, or taking inventory in your bedroom, say "You try [the current action], but as you move to do so, you are overcome by that horrible headache."
+Instead of doing something other than examining, looking, or taking inventory in your bedroom, say "You try [the current action], but as you move to do so, you are overcome by a horrible headache."
 
 A Decision is a scene.  A Decision begins when the player is in the bedroom for the fourth time.
 
@@ -46,7 +44,7 @@ When A Decision begins:
 		rule succeeds.
 
 This is the military ending rule:
-	say "You take a good look at the rifle...[line break][line break]The military can be a very unfair place. You will have no place to truly call your own, and you will sometimes even have to go so far as to take the lives of people that you have no reason to want to. However, at the same time, you will be giving your all to protect the land and people you care for. You will be risking it all to make sure that those who you love won't have to later.[line break][line break]With a sigh, you head out for the recruiting station. Soon, you will start your new life in service of your country.";
+	say "You take a good look at the rifle...[line break][line break]The military can be a very unfair place. You will have no place to truly call your own, and you will sometimes even have to go so far as to take the lives of people that you have no reason to want to. However, at the same time, you will be giving your all to protect the land and people you care for. You will be risking it all to make sure that those who you love won't have to later.[line break][line break]With a hup!, you head out for the recruiting station. Soon, you will start your new life in service of your country.";
 	end the story finally.
 This is the college ending rule:
 	say "You look at the textbook again...[line break][line break]Yeah, college can be rough, and sometimes you don't have the time to do whatever you want, but it's not like you're giving everything away for nothing. You're investing in something more: the ability to do what you want to later, to be able to do it well, and hey, you might even be able to make a good career out of it. And just because you can't ALWAYS relax and do fun things, doesn't mean you NEVER can. [line break][line break]I mean, you're gonna be surrounded by others who are in the exact same situation as you. You'll get to know more people who understand the junk you sometimes have to go through to get ahead. For all the time you lose, you also gain knowledge, and friends.[line break][line break]Wellp, might as well get a start on all the paperwork; Getting into college can be just as hectic as staying in college.";
@@ -75,8 +73,8 @@ Instead of shooting when the player holds a gun:
 	try attacking the noun.
 Instead of shooting when the player does not hold a gun:
 	say "Shoot [the noun] with what?"
-Instead of shooting a gun:
-	say "You might try shooting someone with the gun, instead."
+
+Understand "shoot [gun]" as a mistake("You might try shooting someone with the gun, instead.")
 
 Section 1 - Falling in
 
@@ -109,11 +107,8 @@ Instead of examining when Both Sides of the Gun is happening:
 
 Section 2 - Inside the Gun
 
-[TODO?: maybe this part should be looked over by someone who knows guns]
+The gun barrel is a room.  "You are in one end of a rifle barrel.  Nearby, the [hammer] lies still, blocking one end of the barrel.  Out the opening at the other end you can see a twenty-three year old [girl] wearing camouflage and wielding a submachine gun."
 
-The gun barrel is a room.  "You are in one end of a rifle barrel.  Nearby, the [hammer] lies still, blocking one end of the barrel.  Out the opening at the other end you can see a [girl] wearing camoflauge and wielding a submachine gun." [camouflage?  i think it's spelled right but I should really check]
-
-[TODO: describe]
 The barrel opening is an open door.  It is not openable.  It is outside of the gun barrel.  Through it is the battlefield.
 
 After deciding the scope of the player:
@@ -125,7 +120,6 @@ Instead of examining outside in the gun barrel:
 Instead of going when the room gone from is the gun barrel:
 	say "You can't seem to move very far.  Almost like you don't have legs."
 
-[TODO: description for hammer, gunpowder]
 The mass of gunpowder is a thing in the gun barrel.  It has the initial appearance "Next to you is a packed mass of gunpowder."
 Understand "powder" as the gunpowder.
 
@@ -163,7 +157,7 @@ At the time when the girl shoots:
 This is the rifle firing rule:
 	say "The mass of gunpowder explodes, and you are sent flying out of the rifle.";
 	now the Japanese girl is dead;
-	now the initial appearance of the Japanese girl is "The Japanese girl lies here, a bullet through her heart.";
+	now the initial appearance of the Japanese girl is "The Japanese girl lies here, a bullet from your rifle through her heart.";
 	move the Japanese man to the battlefield;
 	now the enemy is the Japanese man;
 	follow the enter the battlefield rule.
@@ -172,11 +166,11 @@ This is the enter the battlefield rule:
 	now the player carries the rifle;
 	now the gunpowder is off-stage;
 	move the player to the battlefield;
+	say "You ready your rifle and prepare for the fray.";
 	the enemy shoots in two turns from now.
 
 Section 3 - Battle
 
-[TODO: describe battlefield]
 The battlefield is a room. The description is "For what little time you have to look around, all you see is a large, treeless wasteland. You can hear gunshots coming from seemingly every direction.".
 
 [using an adaptation of part of the code from the example "puff of orange smoke"]
@@ -194,23 +188,19 @@ Before printing the name of an improper-named dead person, say "corpse of a ".
 Before printing the name of a proper-named dead person, say "the corpse of ".
 
 [Apparently if you define something as a kind you can make multiple things named the same as the kind.  Good to know.]
-[TODO: maybe give these kinds descriptions..]
-camoflauge is a kind of thing.  Camoflauge is always wearable.  Understand "camo" as camoflauge.  It is plural-named.
+camouflage is a kind of thing.  Camouflage is always wearable.  Understand "camo" as camouflage.  It is plural-named.
 A submachine gun is a kind of gun.
 
 The enemy is a person that varies.
 
-[TODO: describe all these things, and possibly give the people initial appearances.]
-The twenty-three year old Japanese girl is a person. She is female.  She is in the battlefield.  She is wearing camoflauge.  She is holding a submachine gun.
+The Japanese girl is a person. She is female.  She is in the battlefield.  She is wearing camouflage.  She is holding a submachine gun.  The initial appearance is "A Japanese girl stands here with a submachine gun, not having noticed you yet.".
 
-The Japanese man is a person.  He is wearing camoflauge.  He is holding a submachine gun.
+The Japanese man is a person.  He is wearing camouflage.  He is holding a submachine gun.  The initial appearance is "A Japanese man stands here with a submachine gun, not having noticed you yet.".
 
-[TODO: get some text in here.]
-[TODO: add an alternate ending.]
 Both Sides of the Gun ends in victory when the enemy is dead.
 Both Sides of the Gun ends in defeat when the player is dead.
 
-When Both Sides of the Gun ends in victory: say "The moment the Japanese man falls to the ground, you suddenly start to feel faint, and fall to the ground. 
+When Both Sides of the Gun ends in victory: say "The moment [the enemy] falls to the ground, you suddenly start to feel faint, and fall to the ground. 
 
 As your consciousness fades, you only feel relief that you've brought this whole conflict one step closer to victory, that you've done one more thing to keep your friends and family safe, and one more thing in service to your country. 
 
@@ -241,9 +231,8 @@ After dropping the gun when Both Sides of the Gun is happening for the first tim
 At the time when the enemy shoots:
 	if the enemy is alive:
 		decrease Military Affinity by 2;
-		say "[The enemy] gives no mercy and fills you with bullets.";
+		say "[The enemy] notices you and mercilessly fills you with bullets.";
 		now the player is dead.
-[TODO: better prose would be good here.]
 
 Part 3 - College
 
@@ -276,7 +265,7 @@ When The More You Know ends:
 	say "[bold type]Quiz over.  Your score: [Test Score]/[the number of rows in Table 3.1.1].";
 	let Modified Score be (Test Score  * 2) - 5;
 	if Modified Score > 0:
-		say "You pass.[roman type][line break][line break]You feel a great satisfaction in all of this. Even though the questions made less and less sense, you were still able to figure them out on your own. If you can do this, is there any difficulty you can't overcome with thought and a little elbow grease?[line break][line break]Suddenly, the monitors turned white, getting brighter with each moment. Soon, you are consumed in a bright light![line break][line break]You open your eyes, finding yourself back in your room. That whole ordeal was only a dream? This fever must be bad if it's doing this to you...";
+		say "You pass.[roman type][line break][line break]You feel a great satisfaction in all of this. Even though the questions made less and less sense, you were still able to figure them out on your own. If you can do this, is there any difficulty you can't overcome with thought and a little elbow grease?[line break][line break]Suddenly, the monitors turn white, getting brighter with each moment. Soon, you are consumed in a bright light![line break][line break]You open your eyes, finding yourself back in your room. That whole ordeal was only a dream? This fever must be bad if it's doing this to you...";
 	otherwise:
 		say "You fail.[roman type][line break][line break]A great sense of disappointment falls upon you. You thought you had what it took to do this. If something like this is going to hold you back, who knows what other, more esoteric topics might appear and stop you in your future?[line break][line break]In utter disappointment and frustration, you fall onto your knees and let out a loud yell. As you open your eyes again, you realize that you are now in your room. That whole crucible was only a dream. Blasted fever!";
 	move the player to the bedroom;
@@ -355,7 +344,7 @@ Chapter 1 - Rent Contract
 
 Section 1 - Going to the Office
 
-The rent contract is a thing in the bedroom. The description of the rent contract is "The contract to rent a home, proudly signed.".
+The rent contract is a thing in the bedroom.
 
 Understand "read [contract]" as examining.
 
